@@ -1,0 +1,24 @@
+{
+  "testimonials": {
+    "title": "Testimonials",
+    "description": "What students and alumni say about their learning experience in the Doctor of Management Science Program.",
+    "items": [
+      {
+        "quote": "This program provides deep insights relevant to today's business challenges.",
+        "name": "Budi Santoso"
+      },
+      {
+        "quote": "Competent lecturers and supportive facilities greatly assist in dissertation completion.",
+        "name": "Siti Aminah"
+      },
+      {
+        "quote": "Extensive networking and inspiring discussions make studying here very valuable.",
+        "name": "Rahmat Hidayat"
+      },
+      {
+        "quote": "The adaptive curriculum really helps me in developing my academic career.",
+        "name": "Dewi Lestari"
+      }
+    ]
+  }
+}

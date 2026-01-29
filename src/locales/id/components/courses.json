@@ -1,0 +1,33 @@
+{
+  "courses": {
+    "title": "Mata Kuliah",
+    "description": "Program Doktor Ilmu Manajemen dirancang untuk memberikan pemahaman mendalam tentang konsep, teori, dan aplikasi manajemen.",
+    "view_all": "Lihat Semua",
+    "items": [
+      {
+        "duration": "14 Pertemuan",
+        "level": "Lanjut",
+        "title": "Filsafat Ilmu Manajemen",
+        "description": "Mempelajari landasan ontologis, epistemologis, dan aksiologis ilmu manajemen."
+      },
+      {
+        "duration": "14 Pertemuan",
+        "level": "Lanjut",
+        "title": "Metodologi Penelitian Lanjut",
+        "description": "Memperdalam metode penelitian kuantitatif, kualitatif, dan mixed-method."
+      },
+      {
+        "duration": "14 Pertemuan",
+        "level": "Lanjut",
+        "title": "Teori Manajemen Strategik",
+        "description": "Analisis teori-teori manajemen strategik terkini dan aplikasinya."
+      },
+      {
+        "duration": "14 Pertemuan",
+        "level": "Lanjut",
+        "title": "Manajemen Pemasaran Stratejik",
+        "description": "Pengembangan strategi pemasaran dalam konteks global dan digital."
+      }
+    ]
+  }
+}

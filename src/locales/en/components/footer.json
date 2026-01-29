@@ -1,8 +1,28 @@
 {
-  "footer.about": "About Us",
-  "footer.contact": "Contact",
-  "footer.address": "Address",
-  "footer.phone": "Phone",
-  "footer.email": "Email",
-  "footer.copyright": "© 2024 STIE Mahardhika. All rights reserved."
+  "footer": {
+    "contact": {
+      "title": "Contact"
+    },
+    "home": {
+      "title": "Home",
+      "links": {
+        "benefits": "Benefits",
+        "courses": "Our Courses",
+        "testimonials": "Our Testimonials",
+        "faq": "Our FAQ"
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "links": {
+        "company": "Company",
+        "achievements": "Achievements",
+        "goals": "Our Goals"
+      }
+    },
+    "social": {
+      "title": "Social Profiles"
+    },
+    "copyright": "© {{year}} MAHARDHIKA. All rights reserved."
+  }
 }

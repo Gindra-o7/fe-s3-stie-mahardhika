@@ -1,0 +1,87 @@
+{
+  "apply": {
+    "hero": {
+      "title": "PENDAFTARAN"
+    },
+    "information": {
+      "title": "INFORMASI PENDAFTARAN",
+      "requirements": {
+        "title": "Persyaratan",
+        "items": ["Gelar Sarjana / D4", "IPK minimal 2,75", "Transkrip nilai", "KTP", "Foto berwarna 4x6", "Lulus Tes Potensi Akademik"]
+      },
+      "upload": {
+        "title": "Unggah Dokumen",
+        "subtitle": "Gunakan formulir online untuk mengunggah/upload dokumen:",
+        "items": ["CV / Curriculum Vitae", "Transkrip nilai", "SOP (Statement of Purpose)/ Surat rekomendasi", "Bukti kemampuan Bahasa Inggris", "KTP Bagi WNI atau Paspor Bagi WNA"]
+      },
+      "scheme": {
+        "title": "Skema Pendaftaran",
+        "steps": {
+          "1": {
+            "title": "1. REGISTRASI",
+            "content": ["ISI BIO DATA", "DATA: NAMA, EMAIL, WA, NO. KTP", "BAYAR RP 3.000.000", "VIA BANK/ E-WALLET DAN UNGGAH BUKTI CEK EMAIL/ WA UNTUK USERNAME & PASSWORD"]
+          },
+          "2": {
+            "title": "2. LENGKAPI BERKAS",
+            "content": ["UNGGAH DOKUMEN POKOK:", "KTP, KK, IJAZAH & TRANSKRIP S2 LEGALISASI, AKREDITASI BAN-PT", "DOKUMEN PENDUKUNG: KARYA ILMIAH/SERTIFIKAT, SERTIFIKAT INGGRIS, IDE DISERTASI, 2 SURAT REKOMENDASI"]
+          },
+          "3": {
+            "title": "3. SELEKSI",
+            "content": ["CETAK KARTU SPMB", "TUNGGU JADWAL WAWANCARA", "IKUTI WAWANCARA ONLINE", "TERIMA KODE SSO DAN KODE E-LEARNING"]
+          }
+        }
+      }
+    },
+    "form": {
+      "title": "FORMULIR APLIKASI",
+      "personal_info": "INFORMASI PRIBADI",
+      "fields": {
+        "first_name": {
+          "label": "Nama Depan",
+          "placeholder": "Masukkan Nama Depan"
+        },
+        "last_name": {
+          "label": "Nama Belakang",
+          "placeholder": "Masukkan Nama Belakang"
+        },
+        "dob": {
+          "label": "Tanggal Lahir",
+          "placeholder": "Masukkan Tanggal Lahir Anda"
+        },
+        "nationality": {
+          "label": "Kewarganegaraan",
+          "placeholder": "Masukkan Kewarganegaraan"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Masukkan Email Anda"
+        },
+        "phone": {
+          "label": "Telepon",
+          "placeholder": "Masukkan Nomor Telepon"
+        },
+        "address": {
+          "label": "Alamat Saat Ini",
+          "placeholder": "Masukkan Alamat Anda"
+        },
+        "message": {
+          "label": "Pesan",
+          "placeholder": "Masukkan Pesan Anda di sini..."
+        }
+      },
+      "submit": "Kirim Pesan Anda"
+    },
+    "cost": {
+      "title": "BIAYA",
+      "items": [
+        { "label": "Pendaftaran", "value": "Rp. 1.000.000" },
+        { "label": "SPP", "value": "Rp 50.000.000" },
+        { "label": "UANG GEDUNG", "value": "Rp 35.000.000" }
+      ],
+      "additional": [
+        { "label": "Kegiatan Disertasi", "value": "Rp 20.000.000" },
+        { "label": "TOTAL", "value": "Rp 106.000.000" }
+      ]
+    }
+  }
+}

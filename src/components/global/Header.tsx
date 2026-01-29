@@ -3,21 +3,22 @@ import LogoMahardhika from "@/assets/BOLD_MAHARDHIKA.png";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/language-selector";
+import { getRoutePath, RouteKey } from "@/constants/route-config";
 
 const Header = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const navigate = useNavigate();
 
-  const navItems = [
-    { key: "nav.academic", href: "/academic" },
-    { key: "nav.howtoapply", href: "/how-to-apply" },
-    { key: "nav.facility", href: "/facility" },
-    { key: "nav.concentration", href: "/curriculum" },
-    { key: "nav.experience", href: "/cost" },
-    { key: "nav.research", href: "/registration" },
-    { key: "nav.placement", href: "/placement" },
-    { key: "nav.staff", href: "/staff" },
-    { key: "nav.news", href: "/news" },
+  const navItems: { key: string; route: RouteKey }[] = [
+    { key: "nav.academic", route: "ACADEMIC" },
+    { key: "nav.howtoapply", route: "HOW_TO_APPLY" },
+    { key: "nav.facility", route: "FACILITY" },
+    { key: "nav.concentration", route: "CURRICULUM" },
+    { key: "nav.experience", route: "COST" },
+    { key: "nav.research", route: "REGISTRATION" },
+    { key: "nav.placement", route: "PLACEMENT" },
+    { key: "nav.staff", route: "STAFF" },
+    { key: "nav.news", route: "NEWS" },
   ];
 
   return (
@@ -31,7 +32,7 @@ const Header = () => {
           {navItems.map((item, index) => (
             <motion.a
               key={item.key}
-              href={item.href}
+              href={getRoutePath(item.route, language)}
               className="text-[#207D96] hover:text-[#1B3F6E] transition-colors relative group text-sm"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}

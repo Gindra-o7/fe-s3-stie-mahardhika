@@ -1,0 +1,17 @@
+{
+  "cost": {
+    "title": "Tuition Fees",
+    "subtitle": "Complete information regarding the study cost details for the Doctor of Management Science Program",
+    "schedule": {
+      "title": "Payment Schedule",
+      "description": "Payments can be made according to the determined terms each semester."
+    },
+    "details": {
+      "title": "Study Cost Details",
+      "item1": "Registration Fee",
+      "item2": "Matriculation Fee",
+      "item3": "Tuition Fee Per Semester"
+    },
+    "cta": "Register Now"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "academic": {
+    "hero": {
+      "title": "AKADEMIK"
+    },
+    "vision": {
+      "title": "PROGRAM DOKTOR ILMU MANAJEMEN",
+      "description": "Di tengah arus perubahan eksponensial, disrupsi digital, dan ketidakpastian global, hanya pemimpin dengan visi tajam, strategi kuat, dan keberanian inovatif yang mampu menavigasi masa depan. Program Doktor Ilmu Manajemen STIE Mahardhika Surabaya hadir sebagai wadah strategis bagi para pemimpin dan pengambil kebijakan untuk memperdalam pemahaman strategis, memperluas wawasan manajerial, serta menumbuhkan pemikiran visioner. Ruang di mana ilmu dan nilai berpadu menjadi kekuatan untuk <0>mencetak pemimpin visioner di era kompleksitas global.</0>"
+    },
+    "competence": {
+      "title": "KOMPETENSI LULUSAN",
+      "subtitle": "Program ini membentuk pemimpin dan pemikir unggul dengan ketajaman strategi, kepemimpinan bernilai, dan visi berkelanjutan di empat bidang inti manajemen modern:",
+      "items": [
+        {
+          "title": "Pemasaran Strategis",
+          "description": "Mencipta inovasi nilai di era digital."
+        },
+        {
+          "title": "Manajemen SDM & Kepemimpinan Transformasional",
+          "description": "Membangun organisasi adaptif berbasis etika."
+        },
+        {
+          "title": "Strategi Bisnis & Daya Saing Global",
+          "description": "Merancang keunggulan di tengah kompleksitas global."
+        },
+        {
+          "title": "Keuangan & Keberlanjutan Organisasi",
+          "description": "Mengintegrasikan analisis strategis dengan kinerja, nilai, dan tanggung jawab sosial."
+        }
+      ]
+    },
+    "curriculum": {
+      "title": "PROGRAM DOKTOR ILMU MANAJEMEN",
+      "description": "Program ini menghadirkan <0>kurikulum adaptif 42 SKS</0> yang memadukan pembelajaran terstruktur, riset mendalam, kolokium, publikasi internasional, dan disertasi strategis. Dirancang khusus bagi <1>profesional, akademisi, dan eksekutif</1>, program ini dapat ditempuh dalam <2>6 semester (3 tahun)</2> dengan alur studi yang terarah dan progresif."
+    },
+    "method": {
+      "title": "METODE KULIAH",
+      "items": [
+        {
+          "title": "Hybrid Learning Experience",
+          "description": "Fleksibel dan relevan dengan dinamika profesional."
+        },
+        {
+          "title": "Strategic Research & Case-Based Learning",
+          "description": "Mengangkat tantangan nyata organisasi sebagai ruang eksplorasi ilmiah."
+        },
+        {
+          "title": "Doctoral Colloquium & Mentorship Intensive",
+          "description": "Pendampingan personal dari promotor dan pakar berpengalaman."
+        },
+        {
+          "title": "Global Network & Collaborative Publication",
+          "description": "Membuka akses jejaring riset dan kolaborasi internasional."
+        }
+      ]
+    }
+  }
+}

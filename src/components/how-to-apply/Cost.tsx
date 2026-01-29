@@ -1,22 +1,25 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Cost = () => {
+  const { t } = useLanguage();
+
   const costs = [
-    { label: "Pendaftaran", value: "Rp. 1.000.000" },
-    { label: "SPP", value: "Rp 50.000.000" },
-    { label: "UANG GEDUNG", value: "Rp 35.000.000" },
+    { label: t("apply.cost.items.0.label"), value: t("apply.cost.items.0.value") },
+    { label: t("apply.cost.items.1.label"), value: t("apply.cost.items.1.value") },
+    { label: t("apply.cost.items.2.label"), value: t("apply.cost.items.2.value") },
   ];
 
   const additionalCosts = [
-    { label: "Kegiatan Disertasi", value: "Rp 20.000.000" },
-    { label: "TOTAL", value: "Rp 106.000.000" },
+    { label: t("apply.cost.additional.0.label"), value: t("apply.cost.additional.0.value") },
+    { label: t("apply.cost.additional.1.label"), value: t("apply.cost.additional.1.value") },
   ];
 
   return (
     <section className="py-20 px-10 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-start mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 uppercase tracking-wide">BIAYA</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 uppercase tracking-wide">{t("apply.cost.title")}</h2>
           <div className="h-1 bg-[#00BCD4] mt-4 w-24" />
         </div>
 

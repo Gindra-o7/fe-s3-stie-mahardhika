@@ -1,0 +1,24 @@
+{
+  "testimonials": {
+    "title": "感言",
+    "description": "学生和校友对他们在管理科学博士项目中的学习经历的评价。",
+    "items": [
+      {
+        "quote": "该课程提供了与当今商业挑战相关的深刻见解。",
+        "name": "Budi Santoso"
+      },
+      {
+        "quote": "称职的讲师和支持性设施极大地帮助了论文的完成。",
+        "name": "Siti Aminah"
+      },
+      {
+        "quote": "广泛的网络和鼓舞人心的讨论使在这里的学习非常有价值。",
+        "name": "Rahmat Hidayat"
+      },
+      {
+        "quote": "适应性课程确实帮助我发展了我的学术生涯。",
+        "name": "Dewi Lestari"
+      }
+    ]
+  }
+}

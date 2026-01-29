@@ -1,0 +1,44 @@
+{
+  "people": {
+    "title": "OUR PEOPLE",
+    "opportunity": {
+      "title": "CAREER OPPORTUNITIES",
+      "subtitle": "Graduates suitable for:",
+      "items": ["Consultant", "Marketing", "Strategic Analyst", "Financial Operations", "Entrepreneur", "Academic", "HR", "Government"]
+    },
+    "testimonials": {
+      "title": "ALUMNI TESTIMONIALS",
+      "items": [
+        {
+          "quote": "An amazing learning experience with full support from lecturers and staff.",
+          "name": "Sarah L"
+        },
+        {
+          "quote": "The industry-relevant curriculum really helped me in my career.",
+          "name": "Jason M"
+        },
+        {
+          "quote": "Complete facilities and a conducive learning environment.",
+          "name": "Emily R"
+        },
+        {
+          "quote": "I highly recommend this program to anyone who wants to grow.",
+          "name": "Michael K"
+        }
+      ]
+    },
+    "network": {
+      "title": "CAMPUS NETWORK",
+      "stats": [
+        {
+          "value": "600+",
+          "label": "MM program students annually"
+        },
+        {
+          "value": "9000+",
+          "label": "students"
+        }
+      ]
+    }
+  }
+}

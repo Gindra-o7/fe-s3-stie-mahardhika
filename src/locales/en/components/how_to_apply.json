@@ -1,0 +1,91 @@
+{
+  "apply": {
+    "hero": {
+      "title": "REGISTRATION"
+    },
+    "information": {
+      "title": "REGISTRATION INFORMATION",
+      "requirements": {
+        "title": "Requirements",
+        "items": ["Bachelor's Degree / D4", "Minimum GPA 2.75", "Academic Transcript", "ID Card (KTP)", "4x6 Color Photo", "Pass Academic Potential Test"]
+      },
+      "upload": {
+        "title": "Upload Documents",
+        "subtitle": "Use the online form to upload documents:",
+        "items": ["CV / Curriculum Vitae", "Academic Transcript", "SOP (Statement of Purpose) / Recommendation Letter", "Proof of English Proficiency", "ID Card for Citizens or Passport for Foreigners"]
+      },
+      "scheme": {
+        "title": "Registration Scheme",
+        "steps": {
+          "1": {
+            "title": "1. REGISTRATION",
+            "content": ["FILL BIO DATA", "DATA: NAME, EMAIL, WA, ID NUMBER", "PAY IDR 3,000,000", "VIA BANK/E-WALLET AND UPLOAD PROOF CHECK EMAIL/WA FOR USERNAME & PASSWORD"]
+          },
+          "2": {
+            "title": "2. COMPLETE FILES",
+            "content": [
+              "UPLOAD CORE DOCUMENTS:",
+              "ID CARD, FAMILY CARD, MASTER'S DIPLOMA & TRANSCRIPT LEGALIZED, BAN-PT ACCREDITATION",
+              "SUPPORTING DOCUMENTS: SCIENTIFIC WORK/CERTIFICATE, ENGLISH CERTIFICATE, DISSERTATION IDEA, 2 RECOMMENDATION LETTERS"
+            ]
+          },
+          "3": {
+            "title": "3. SELECTION",
+            "content": ["PRINT SPMB CARD", "WAIT FOR INTERVIEW SCHEDULE", "JOIN ONLINE INTERVIEW", "RECEIVE SSO CODE AND E-LEARNING CODE"]
+          }
+        }
+      }
+    },
+    "form": {
+      "title": "APPLICATION FORM",
+      "personal_info": "PERSONAL INFORMATION",
+      "fields": {
+        "first_name": {
+          "label": "First Name",
+          "placeholder": "Enter First Name"
+        },
+        "last_name": {
+          "label": "Last Name",
+          "placeholder": "Enter Last Name"
+        },
+        "dob": {
+          "label": "Date of Birth",
+          "placeholder": "Enter your Date of Birth"
+        },
+        "nationality": {
+          "label": "Nationality",
+          "placeholder": "Enter Nationality"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your Email"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter Phone Number"
+        },
+        "address": {
+          "label": "Current Address",
+          "placeholder": "Enter your Address"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Enter your Message here..."
+        }
+      },
+      "submit": "Send Your Message"
+    },
+    "cost": {
+      "title": "FEES",
+      "items": [
+        { "label": "Registration", "value": "Rp. 1.000.000" },
+        { "label": "Tuition Fee", "value": "Rp 50.000.000" },
+        { "label": "Building Fee", "value": "Rp 35.000.000" }
+      ],
+      "additional": [
+        { "label": "Dissertation Activity", "value": "Rp 20.000.000" },
+        { "label": "TOTAL", "value": "Rp 106.000.000" }
+      ]
+    }
+  }
+}

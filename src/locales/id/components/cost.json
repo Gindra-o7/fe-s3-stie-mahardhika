@@ -1,0 +1,17 @@
+{
+  "cost": {
+    "title": "Biaya Pendidikan",
+    "subtitle": "Informasi lengkap mengenai rincian biaya studi Program Doktor Ilmu Manajemen",
+    "schedule": {
+      "title": "Jadwal Pembayaran",
+      "description": "Pembayaran dapat dilakukan sesuai dengan termin yang telah ditentukan setiap semester."
+    },
+    "details": {
+      "title": "Rincian Biaya Studi",
+      "item1": "Biaya Pendaftaran",
+      "item2": "Biaya Matrikulasi",
+      "item3": "Biaya SPP Per Semester"
+    },
+    "cta": "Daftar Sekarang"
+  }
+}

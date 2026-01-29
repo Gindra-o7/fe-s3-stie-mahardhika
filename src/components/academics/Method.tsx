@@ -1,31 +1,33 @@
 import { motion } from "framer-motion";
-
-const methods = [
-  {
-    title: "Hybrid Learning Experience",
-    description: "Fleksibel dan relevan dengan dinamika profesional.",
-  },
-  {
-    title: "Strategic Research & Case-Based Learning",
-    description: "Mengangkat tantangan nyata organisasi sebagai ruang eksplorasi ilmiah.",
-  },
-  {
-    title: "Doctoral Colloquium & Mentorship Intensive",
-    description: "Pendampingan personal dari promotor dan pakar berpengalaman.",
-  },
-  {
-    title: "Global Network & Collaborative Publication",
-    description: "Membuka akses jejaring riset dan kolaborasi internasional.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Method = () => {
+  const { t } = useLanguage();
+  const methods = [
+    {
+      title: t("academic.method.items.0.title"),
+      description: t("academic.method.items.0.description"),
+    },
+    {
+      title: t("academic.method.items.1.title"),
+      description: t("academic.method.items.1.description"),
+    },
+    {
+      title: t("academic.method.items.2.title"),
+      description: t("academic.method.items.2.description"),
+    },
+    {
+      title: t("academic.method.items.3.title"),
+      description: t("academic.method.items.3.description"),
+    },
+  ];
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-20">
         <div className="mb-12">
           <motion.div className="inline-block relative" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide">METODE KULIAH</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide">{t("academic.method.title")}</h2>
             <motion.div className="h-1 bg-[#00BCD4] mt-4" initial={{ width: 0 }} whileInView={{ width: "100%" }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.3 }} />
           </motion.div>
         </div>

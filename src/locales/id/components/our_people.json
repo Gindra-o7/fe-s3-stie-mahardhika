@@ -1,0 +1,44 @@
+{
+  "people": {
+    "title": "ORANG-ORANG KAMI",
+    "opportunity": {
+      "title": "PELUANG KARIR",
+      "subtitle": "Lulusan yang cocok untuk:",
+      "items": ["Konsultan", "Pemasaran", "Analis Strategis", "Operasi Keuangan", "Wirausahawan", "Akademisi", "SDM", "Pemerintah"]
+    },
+    "testimonials": {
+      "title": "TESTIMONI LULUSAN",
+      "items": [
+        {
+          "quote": "Pengalaman belajar yang luar biasa dengan dukungan penuh dari dosen dan staf.",
+          "name": "Sarah L"
+        },
+        {
+          "quote": "Kurikulum yang relevan dengan industri sangat membantu saya dalam karir.",
+          "name": "Jason M"
+        },
+        {
+          "quote": "Fasilitas lengkap dan lingkungan belajar yang kondusif.",
+          "name": "Emily R"
+        },
+        {
+          "quote": "Saya sangat merekomendasikan program ini bagi siapa saja yang ingin berkembang.",
+          "name": "Michael K"
+        }
+      ]
+    },
+    "network": {
+      "title": "JARINGAN KAMPUS",
+      "stats": [
+        {
+          "value": "600+",
+          "label": "mahasiswa program MM setiap tahunnya"
+        },
+        {
+          "value": "9000+",
+          "label": "mahasiswa"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "testimonials": {
+    "title": "Testimoni",
+    "description": "Apa kata para mahasiswa dan alumni tentang pengalaman belajar mereka di Program Doktor Ilmu Manajemen.",
+    "items": [
+      {
+        "quote": "Program ini memberikan wawasan mendalam dan relevan dengan tantangan bisnis masa kini.",
+        "name": "Budi Santoso"
+      },
+      {
+        "quote": "Dosen yang kompeten dan fasilitas yang mendukung sangat membantu dalam penyelesaian disertasi.",
+        "name": "Siti Aminah"
+      },
+      {
+        "quote": "Jejaring yang luas dan diskusi yang inspiratif membuat studi di sini sangat berharga.",
+        "name": "Rahmat Hidayat"
+      },
+      {
+        "quote": "Kurikulum yang adaptif sangat membantu saya dalam mengembangkan karir akademis saya.",
+        "name": "Dewi Lestari"
+      }
+    ]
+  }
+}

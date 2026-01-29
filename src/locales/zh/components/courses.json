@@ -1,0 +1,33 @@
+{
+  "courses": {
+    "title": "课程",
+    "description": "管理科学博士项目旨在深入理解管理概念、理论和应用。",
+    "items": [
+      {
+        "duration": "14 节课",
+        "level": "高级",
+        "title": "管理科学哲学",
+        "description": "学习管理科学的本体论、认识论和价值论基础。"
+      },
+      {
+        "duration": "14 节课",
+        "level": "高级",
+        "title": "高级研究方法论",
+        "description": "深化定量、定性和混合研究方法。"
+      },
+      {
+        "duration": "14 节课",
+        "level": "高级",
+        "title": "战略管理理论",
+        "description": "分析当前的战略管理理论及其应用。"
+      },
+      {
+        "duration": "14 节课",
+        "level": "高级",
+        "title": "战略营销管理",
+        "description": "在全球和数字背景下制定营销策略。"
+      }
+    ],
+    "view_all": "查看全部"
+  }
+}

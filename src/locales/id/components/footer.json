@@ -1,8 +1,28 @@
 {
-  "footer.about": "Tentang Kami",
-  "footer.contact": "Kontak",
-  "footer.address": "Alamat",
-  "footer.phone": "Telepon",
-  "footer.email": "Email",
-  "footer.copyright": "© 2024 STIE Mahardhika. Semua hak dilindungi."
+  "footer": {
+    "contact": {
+      "title": "Kontak"
+    },
+    "home": {
+      "title": "Beranda",
+      "links": {
+        "benefits": "Manfaat",
+        "courses": "Program Studi",
+        "testimonials": "Testimoni",
+        "faq": "FAQ"
+      }
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "links": {
+        "company": "Perusahaan",
+        "achievements": "Pencapaian",
+        "goals": "Tujuan Kami"
+      }
+    },
+    "social": {
+      "title": "Profil Sosial"
+    },
+    "copyright": "© {{year}} MAHARDHIKA. Hak Cipta Dilindungi."
+  }
 }

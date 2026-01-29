@@ -1,0 +1,44 @@
+{
+  "people": {
+    "title": "我们的人员",
+    "opportunity": {
+      "title": "职业机会",
+      "subtitle": "毕业生适合：",
+      "items": ["顾问", "市场营销", "战略分析师", "金融运营", "企业家", "学者", "人力资源", "政府"]
+    },
+    "testimonials": {
+      "title": "校友感言",
+      "items": [
+        {
+          "quote": "拥有讲师和员工全力支持的绝佳学习体验。",
+          "name": "Sarah L"
+        },
+        {
+          "quote": "与行业相关的课程确实对我的职业生涯有所帮助。",
+          "name": "Jason M"
+        },
+        {
+          "quote": "设施齐全，学习环境良好。",
+          "name": "Emily R"
+        },
+        {
+          "quote": "我强烈向任何想要成长的人推荐这个项目。",
+          "name": "Michael K"
+        }
+      ]
+    },
+    "network": {
+      "title": "校园网络",
+      "stats": [
+        {
+          "value": "600+",
+          "label": "每年 MM 项目学生"
+        },
+        {
+          "value": "9000+",
+          "label": "学生"
+        }
+      ]
+    }
+  }
+}

@@ -1,8 +1,28 @@
 {
-  "footer.about": "关于我们",
-  "footer.contact": "联系方式",
-  "footer.address": "地址",
-  "footer.phone": "电话",
-  "footer.email": "邮箱",
-  "footer.copyright": "© 2024 STIE Mahardhika. 版权所有."
+  "footer": {
+    "contact": {
+      "title": "联系方式"
+    },
+    "home": {
+      "title": "首页",
+      "links": {
+        "benefits": "优势",
+        "courses": "课程",
+        "testimonials": "感言",
+        "faq": "常见问题"
+      }
+    },
+    "about": {
+      "title": "关于我们",
+      "links": {
+        "company": "公司",
+        "achievements": "成就",
+        "goals": "我们的目标"
+      }
+    },
+    "social": {
+      "title": "社交资料"
+    },
+    "copyright": "© {{year}} MAHARDHIKA. 版权所有."
+  }
 }

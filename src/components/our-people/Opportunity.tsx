@@ -1,17 +1,29 @@
 import { motion } from "framer-motion";
-
-const opportunities = ["Konsultan", "Pemasaran", "Analis Strategis", "Operasi Keuangan", "Wirausahawan", "Akademisi", "SDM", "Pemerintah"];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Opportunity = () => {
+  const { t } = useLanguage();
+
+  const opportunities = [
+    t("people.opportunity.items.0"),
+    t("people.opportunity.items.1"),
+    t("people.opportunity.items.2"),
+    t("people.opportunity.items.3"),
+    t("people.opportunity.items.4"),
+    t("people.opportunity.items.5"),
+    t("people.opportunity.items.6"),
+    t("people.opportunity.items.7"),
+  ];
+
   return (
     <section className="py-20 bg-[#EAECEE]">
       <div className="container mx-auto px-4 md:px-20">
         <div className="mb-12">
           <div className="w-fit">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 uppercase tracking-wide">PELUANG KARIR</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 uppercase tracking-wide">{t("people.opportunity.title")}</h2>
             <div className="h-1 bg-[#00BCD4] mt-4 w-full" />
           </div>
-          <p className="mt-4 text-gray-600">Lulusan yang cocok untuk:</p>
+          <p className="mt-4 text-gray-600">{t("people.opportunity.subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,0 +1,87 @@
+{
+  "apply": {
+    "hero": {
+      "title": "注册"
+    },
+    "information": {
+      "title": "注册信息",
+      "requirements": {
+        "title": "要求",
+        "items": ["学士学位 / D4", "最低GPA 2.75", "成绩单", "身份证 (KTP)", "4x6彩色照片", "通过学术潜力测试"]
+      },
+      "upload": {
+        "title": "上传文件",
+        "subtitle": "使用在线表格上传文件：",
+        "items": ["各历 / 简历", "成绩单", "SOP（目的声明）/ 推荐信", "英语能力证明", "公民身份证或外国人护照"]
+      },
+      "scheme": {
+        "title": "注册方案",
+        "steps": {
+          "1": {
+            "title": "1. 注册",
+            "content": ["填写生物数据", "数据：姓名、电子邮件、WA、身份证号码", "支付 3,000,000 印尼盾", "通过银行/电子钱包并上传证明 检查电子邮件/WA 获取用户名和密码"]
+          },
+          "2": {
+            "title": "2. 完整文件",
+            "content": ["上传核心文件：", "身份证、家庭卡、硕士文凭和成绩单公证、BAN-PT 认证", "支持文件：科学作品/证书、英语证书、论文构思、2封推荐信"]
+          },
+          "3": {
+            "title": "3. 选拔",
+            "content": ["打印 SPMB 卡", "等待面试安排", "参加在线面试", "接收 SSO 代码和电子学习代码"]
+          }
+        }
+      }
+    },
+    "form": {
+      "title": "申请表",
+      "personal_info": "个人信息",
+      "fields": {
+        "first_name": {
+          "label": "名字",
+          "placeholder": "输入名字"
+        },
+        "last_name": {
+          "label": "姓氏",
+          "placeholder": "输入姓氏"
+        },
+        "dob": {
+          "label": "出生日期",
+          "placeholder": "输入您的出生日期"
+        },
+        "nationality": {
+          "label": "国籍",
+          "placeholder": "输入国籍"
+        },
+        "email": {
+          "label": "电子邮件",
+          "placeholder": "输入您的电子邮件"
+        },
+        "phone": {
+          "label": "电话",
+          "placeholder": "输入电话号码"
+        },
+        "address": {
+          "label": "当前地址",
+          "placeholder": "输入您的地址"
+        },
+        "message": {
+          "label": "留言",
+          "placeholder": "在此输入您的留言..."
+        }
+      },
+      "submit": "发送您的留言"
+    },
+    "cost": {
+      "title": "费用",
+      "items": [
+        { "label": "注册", "value": "Rp. 1.000.000" },
+        { "label": "学费", "value": "Rp 50.000.000" },
+        { "label": "建设费", "value": "Rp 35.000.000" }
+      ],
+      "additional": [
+        { "label": "论文活动", "value": "Rp 20.000.000" },
+        { "label": "总计", "value": "Rp 106.000.000" }
+      ]
+    }
+  }
+}

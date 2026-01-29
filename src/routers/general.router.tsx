@@ -16,78 +16,44 @@ import HowToApplyPage from "@/pages/publics/how-to-apply.page";
 import InternationalSupportPage from "@/pages/publics/international-support.page";
 import OurPeoplePage from "@/pages/publics/our-people.page";
 import AboutPage from "@/pages/publics/about.page";
+import { ROUTE_CONFIG } from "@/constants/route-config";
+
+const createLocalizedRoutes = (paths: { id: string; en: string; zh: string }, element: JSX.Element): RouteObject[] => {
+  return Object.values(paths).map((path) => ({
+    path,
+    element,
+  }));
+};
 
 export const generalRouter: RouteObject[] = [
-	{
-		path: "/",
-		element: <LandingPage />,
-	},
-	{
-		path: "/beranda",
-		element: <LandingPage />,
-	},
-	{
-		path: "/academic",
-		element: <AcademicPage />,
-	},
-	{
-		path: "/facility",
-		element: <FacilityPage />,
-	},
-	{
-		path: "/how-to-apply",
-		element: <HowToApplyPage />,
-	},
-	{
-		path: "/international-support",
-		element: <InternationalSupportPage />,
-	},
-	{
-		path: "/our-people",
-		element: <OurPeoplePage />,
-	},
-	{
-		path: "/about",
-		element: <AboutPage />,
-	},
-	{
-		path: "/profile",
-		element: <ProfilProdiPage />,
-	},
-	{
-		path: "/curriculum",
-		element: <CurriculumPage />,
-	},
-	{
-		path: "/cost",
-		element: <BiayaPage />,
-	},
-	{
-		path: "/registration",
-		element: <TataCaraPendaftaranPage />,
-	},
-	{
-		path: "/forbidden",
-		element: <ForbiddenPage />,
-	},
-	{
-		path: "/payment-callback",
-		element: <PaymentCallbackPage />,
-	},
-	{
-		path: "*",
-		element: <NotFoundPage />,
-	},
-	{
-		path: "/login",
-		element: <LoginPage />,
-	},
-	{
-		path: "/forgot-password",
-		element: <ForgotPasswordPage />,
-	},
-	{
-		path: "/reset-password",
-		element: <ResetPasswordPage />,
-	}
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  ...createLocalizedRoutes(ROUTE_CONFIG.HOME, <LandingPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.ACADEMIC, <AcademicPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.FACILITY, <FacilityPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.HOW_TO_APPLY, <HowToApplyPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.INTERNATIONAL_SUPPORT, <InternationalSupportPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.OUR_PEOPLE, <OurPeoplePage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.ABOUT, <AboutPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.PROFILE, <ProfilProdiPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.CURRICULUM, <CurriculumPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.COST, <BiayaPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.REGISTRATION, <TataCaraPendaftaranPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.LOGIN, <LoginPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.FORGOT_PASSWORD, <ForgotPasswordPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.RESET_PASSWORD, <ResetPasswordPage />),
+  {
+    path: "/forbidden",
+    element: <ForbiddenPage />,
+  },
+  {
+    path: "/payment-callback",
+    element: <PaymentCallbackPage />,
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
+  },
 ];

@@ -1,0 +1,58 @@
+{
+  "academic": {
+    "hero": {
+      "title": "ACADEMIC"
+    },
+    "vision": {
+      "title": "DOCTOR OF MANAGEMENT SCIENCE PROGRAM",
+      "description": "Amidst exponential change, digital disruption, and global uncertainty, only leaders with sharp vision, strong strategy, and innovative courage can navigate the future. Specifically designed for leaders and policymakers, the Doctor of Management Science Program at STIE Mahardhika Surabaya serves as a strategic platform to deepen strategic understanding, expand managerial insights, and cultivate visionary thinking. A space where knowledge and values merge into a force to <0>mold visionary leaders in the era of global complexity.</0>"
+    },
+    "competence": {
+      "title": "GRADUATE COMPETENCIES",
+      "subtitle": "This program shapes superior leaders and thinkers with strategic sharpness, principled leadership, and sustainable vision in four core areas of modern management:",
+      "items": [
+        {
+          "title": "Strategic Marketing",
+          "description": "Creating value innovation in the digital era."
+        },
+        {
+          "title": "HR Management & Transformational Leadership",
+          "description": "Building adaptive organizations based on ethics."
+        },
+        {
+          "title": "Business Strategy & Global Competitiveness",
+          "description": "Designing excellence amidst global complexity."
+        },
+        {
+          "title": "Finance & Organizational Sustainability",
+          "description": "Integrating strategic analysis with performance, value, and social responsibility."
+        }
+      ]
+    },
+    "curriculum": {
+      "title": "DOCTOR OF MANAGEMENT SCIENCE PROGRAM",
+      "description": "This program presents <0>an adaptive 42-credit curriculum</0> blending structured learning, in-depth research, colloquiums, international publications, and strategic dissertation. Designed specifically for <1>professionals, academics, and executives</1>, this program can be completed in <2>6 semesters (3 years)</2> with a directed and progressive study path."
+    },
+    "method": {
+      "title": "LECTURE METHODS",
+      "items": [
+        {
+          "title": "Hybrid Learning Experience",
+          "description": "Flexible and relevant to professional dynamics."
+        },
+        {
+          "title": "Strategic Research & Case-Based Learning",
+          "description": "Addressing real organizational challenges as a space for scientific exploration."
+        },
+        {
+          "title": "Doctoral Colloquium & Mentorship Intensive",
+          "description": "Personal mentoring from promoters and experienced experts."
+        },
+        {
+          "title": "Global Network & Collaborative Publication",
+          "description": "Opening access to research networks and international collaboration."
+        }
+      ]
+    }
+  }
+}

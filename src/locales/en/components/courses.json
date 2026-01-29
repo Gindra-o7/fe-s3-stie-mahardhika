@@ -1,0 +1,33 @@
+{
+  "courses": {
+    "title": "Courses",
+    "description": "The Doctor of Management Science program is designed to provide in-depth understanding of management concepts, theories, and applications.",
+    "items": [
+      {
+        "duration": "14 Sessions",
+        "level": "Advanced",
+        "title": "Philosophy of Management Science",
+        "description": "Studying the ontological, epistemological, and axiological foundations of management science."
+      },
+      {
+        "duration": "14 Sessions",
+        "level": "Advanced",
+        "title": "Advanced Research Methodology",
+        "description": "Deepening quantitative, qualitative, and mixed-method research methods."
+      },
+      {
+        "duration": "14 Sessions",
+        "level": "Advanced",
+        "title": "Strategic Management Theory",
+        "description": "Analysis of current strategic management theories and their applications."
+      },
+      {
+        "duration": "14 Sessions",
+        "level": "Advanced",
+        "title": "Strategic Marketing Management",
+        "description": "Developing marketing strategies in a global and digital context."
+      }
+    ],
+    "view_all": "View All"
+  }
+}
