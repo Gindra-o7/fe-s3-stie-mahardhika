@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Languages } from "lucide-react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import indonesiaFlag from "@/assets/indonesia.svg";
 import unitedKingdomFlag from "@/assets/united-kingdom.svg";
@@ -32,8 +32,14 @@ const LanguageSelector: React.FC = () => {
         whileTap={{ scale: 0.95 }}
       >
         <div className="flex items-center gap-1.5">
-          {currentLanguage && <img src={currentLanguage.flag} alt={currentLanguage.name} className="w-4 h-4 object-contain" />}
-          <span className="text-xs font-medium uppercase">{currentLanguage?.code}</span>
+          {currentLanguage ? (
+            <>
+              <img src={currentLanguage.flag} alt={currentLanguage.name} className="w-4 h-4 object-contain" />
+              <span className="text-xs font-medium uppercase">{currentLanguage.code}</span>
+            </>
+          ) : (
+            <Languages className="w-4 h-4" />
+          )}
         </div>
         <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
           <ChevronDown className="w-3 h-3" />
