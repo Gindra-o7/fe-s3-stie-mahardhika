@@ -1,5 +1,6 @@
 {
-  "features.title": "为什么选择STIE Mahardhika?",
+  "features.title": "特色",
+  "features.description": "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.",
   "features.quality": "最佳教育质量",
   "features.quality.desc": "根据行业需求定制的课程",
   "features.faculty": "经验丰富的讲师",
@@ -7,5 +8,6 @@
   "features.facility": "完善的设施",
   "features.facility.desc": "支持学习的现代化设施",
   "features.career": "职业支持",
-  "features.career.desc": "职业指导和就业安置"
+  "features.career.desc": "职业指导和就业安置",
+  "features.buttonViewAll": "查看全部"
 }

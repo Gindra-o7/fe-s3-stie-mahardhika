@@ -1,9 +1,13 @@
 {
-  "nav.home": "Home",
-  "nav.profile": "Program Profile",
-  "nav.curriculum": "Curriculum", 
-  "nav.cost": "Cost",
-  "nav.registration": "Registration Process",
+  "nav.academic": "Academic",
+  "nav.howtoapply": "How to Apply",
+  "nav.facility": "Facilities",
+  "nav.concentration": "Concentrations",
+  "nav.experience": "Student Experience",
+  "nav.research": "Research Funding and Support",
+  "nav.placement": "Placement",
+  "nav.staff": "Faculty and Staff",
+  "nav.news": "News",
   "button.login": "Login",
   "button.register": "Register Now",
   "button.logout": "Logout"

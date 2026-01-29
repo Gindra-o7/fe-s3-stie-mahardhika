@@ -10,6 +10,12 @@ import CurriculumPage from "@/pages/publics/curriculum.page";
 import ProfilProdiPage from "@/pages/publics/profil-prodi.page";
 import PaymentCallbackPage from "@/pages/publics/payment-callback.page";
 import { RouteObject } from "react-router-dom";
+import AcademicPage from "@/pages/publics/academic.page";
+import FacilityPage from "@/pages/publics/facility.page";
+import HowToApplyPage from "@/pages/publics/how-to-apply.page";
+import InternationalSupportPage from "@/pages/publics/international-support.page";
+import OurPeoplePage from "@/pages/publics/our-people.page";
+import AboutPage from "@/pages/publics/about.page";
 
 export const generalRouter: RouteObject[] = [
 	{
@@ -19,6 +25,30 @@ export const generalRouter: RouteObject[] = [
 	{
 		path: "/beranda",
 		element: <LandingPage />,
+	},
+	{
+		path: "/academic",
+		element: <AcademicPage />,
+	},
+	{
+		path: "/facility",
+		element: <FacilityPage />,
+	},
+	{
+		path: "/how-to-apply",
+		element: <HowToApplyPage />,
+	},
+	{
+		path: "/international-support",
+		element: <InternationalSupportPage />,
+	},
+	{
+		path: "/our-people",
+		element: <OurPeoplePage />,
+	},
+	{
+		path: "/about",
+		element: <AboutPage />,
 	},
 	{
 		path: "/profile",

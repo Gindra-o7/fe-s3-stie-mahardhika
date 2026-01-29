@@ -1,5 +1,6 @@
 {
-  "features.title": "Mengapa Memilih STIE Mahardhika?",
+  "features.title": "Fitur",
+  "features.description": "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.",
   "features.quality": "Kualitas Pendidikan Terbaik",
   "features.quality.desc": "Kurikulum yang disesuaikan dengan kebutuhan industri",
   "features.faculty": "Dosen Berpengalaman",
@@ -7,5 +8,6 @@
   "features.facility": "Fasilitas Lengkap",
   "features.facility.desc": "Fasilitas modern untuk mendukung pembelajaran",
   "features.career": "Bantuan Karir",
-  "features.career.desc": "Bimbingan karir dan penempatan kerja"
+  "features.career.desc": "Bimbingan karir dan penempatan kerja",
+  "features.buttonViewAll": "Lihat Semua"
 }

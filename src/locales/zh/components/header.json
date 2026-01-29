@@ -1,9 +1,13 @@
 {
-  "nav.home": "首页",
-  "nav.profile": "专业简介",
-  "nav.curriculum": "课程",
-  "nav.cost": "费用",
-  "nav.registration": "注册流程",
+  "nav.academic": "学术",
+  "nav.howtoapply": "如何申请",
+  "nav.facility": "设施",
+  "nav.concentration": "专业方向",
+  "nav.experience": "学生体验",
+  "nav.research": "研究资助与支持",
+  "nav.placement": "就业安置",
+  "nav.staff": "教职员工",
+  "nav.news": "新闻动态",
   "button.login": "登录",
   "button.register": "立即注册",
   "button.logout": "登出"

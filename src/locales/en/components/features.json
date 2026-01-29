@@ -1,5 +1,6 @@
 {
-  "features.title": "Why Choose STIE Mahardhika?",
+  "features.title": "Features",
+  "features.description": "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.",
   "features.quality": "Best Education Quality",
   "features.quality.desc": "Curriculum tailored to industry needs",
   "features.faculty": "Experienced Lecturers",
@@ -7,5 +8,6 @@
   "features.facility": "Complete Facilities",
   "features.facility.desc": "Modern facilities to support learning",
   "features.career": "Career Support",
-  "features.career.desc": "Career guidance and job placement"
+  "features.career.desc": "Career guidance and job placement",
+  "features.buttonViewAll": "View All"
 }

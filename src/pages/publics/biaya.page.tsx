@@ -1,5 +1,5 @@
-import Header from "@/components/landing/Header";
-import Footer from "@/components/landing/Footer";
+import Header from "@/components/global/Header";
+import Footer from "@/components/global/Footer";
 import { LoadingScreen } from "@/components/landing/Loading";
 import { useEffect, useState } from "react";
 

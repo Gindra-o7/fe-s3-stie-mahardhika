@@ -1,87 +1,43 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
-
-// import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
-import BackgroundImage2 from "@/assets/foto/VICL1354.webp";
-import BackgroundImage3 from "@/assets/foto/VICL1455.webp";
-// import BackgroundImage4 from "@/assets/foto/VICL1807.webp";
 
 import { ModalRegisOnline } from "./ModalRegisOnline";
 import { useLanguage } from "@/contexts/LanguageContext";
+import heroImage from "@/assets/components/landing/hero/hero.webp";
 
 const Hero = () => {
   const { t } = useLanguage();
-  const backgroundImages = [BackgroundImage2, BackgroundImage3];
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const imageVariants = {
-    active: { opacity: 1, transition: { duration: 1 } },
-    inactive: { opacity: 0, transition: { duration: 1 } },
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 8000);
-    return () => clearInterval(interval);
-  }, [backgroundImages.length]);
-
   return (
-    <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
-      {backgroundImages.map((image, index) => (
-        <motion.div
-          key={index}
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          variants={imageVariants}
-          initial="inactive"
-          animate={index === activeImageIndex ? "active" : "inactive"}
-        />
-      ))}
+    <section
+      className="relative min-h-[500px] md:min-h-[600px] flex items-center"
+      style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Content */}
+      <div className="container mx-auto px-20 relative z-10">
+        <motion.div className="max-w-2xl text-left" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">{t("hero.title")}</h1>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-transparent" />
+          <p className="text-base md:text-lg text-gray-700 mb-8">{t("hero.description")}</p>
 
-      <motion.div
-        className="absolute inset-0"
-        animate={{
-          background: [
-            "radial-gradient(circle at 20% 50%, rgba(32, 125, 150, 0.1) 0%, transparent 50%)",
-            "radial-gradient(circle at 80% 50%, rgba(27, 63, 110, 0.1) 0%, transparent 50%)",
-            "radial-gradient(circle at 20% 50%, rgba(32, 125, 150, 0.1) 0%, transparent 50%)",
-          ],
-        }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
+          <div className="flex flex-wrap gap-4">
+            <motion.button className="bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-6 py-3 rounded-lg font-semibold transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => setIsModalOpen(true)}>
+              {t("hero.cta")}
+            </motion.button>
 
-      <motion.div className="relative z-10 p-4 max-w-4xl mx-auto" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut" }}>
-        <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.8 }}>
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ccf4ff] via-[#8eb6eb] to-[#4ad8ff]">{t('hero.title')}</span>
-          <br />
-          <span className="text-3xl md:text-5xl">{t('hero.subtitle')}</span>
-        </motion.h1>
-
-        <motion.p className="mt-6 text-xl md:text-2xl font-light text-gray-200" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
-          {t('hero.description')}
-        </motion.p>
-
-        <motion.div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.8 }}>
-          <motion.button
-            className="group bg-gradient-to-r from-[#207D96] to-[#1B3F6E] text-white px-8 py-4 rounded-xl hover:shadow-2xl hover:shadow-[#207D96]/50 transition-all font-semibold text-lg flex items-center gap-2 w-full sm:w-auto justify-center"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => setIsModalOpen(true)}
-          >
-{t('hero.cta')}
-            <ChevronRight className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" />
-          </motion.button>
+            <motion.button className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-6 py-3 rounded-lg font-semibold transition-all" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              {t("hero.learnMore")}
+            </motion.button>
+          </div>
         </motion.div>
-      </motion.div>
+      </div>
+
       <ModalRegisOnline isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );

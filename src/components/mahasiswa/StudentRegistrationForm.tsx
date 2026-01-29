@@ -221,6 +221,21 @@ const StudentRegistrationForm = () => {
     const fieldName = name;
     const existingFile = formData[fieldName as keyof typeof formData] as FileData | null;
 
+    // Validasi khusus untuk pas foto - hanya menerima file gambar
+    if (fieldName === "pas_foto_url") {
+      const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+      const fileExtension = file.name.split(".").pop()?.toLowerCase();
+      const allowedExtensions = ["jpg", "jpeg", "png"];
+
+      if (!allowedTypes.includes(file.type) && !allowedExtensions.includes(fileExtension || "")) {
+        toast.error(t("form.toast.validation.pas.foto.image.only"));
+        // Reset input
+        const input = document.getElementById(fieldName) as HTMLInputElement;
+        if (input) input.value = "";
+        return;
+      }
+    }
+
     // Set uploading state
     setUploadingFiles((prev) => new Set(prev).add(fieldName));
 
@@ -438,11 +453,14 @@ const StudentRegistrationForm = () => {
     // Use direct URL from response for display (not GET endpoint which returns JSON metadata)
     const fileUrl = fileData?.url || "";
 
+    // Accept attribute: untuk pas foto hanya gambar, untuk field lain gambar dan PDF
+    const acceptAttribute = fieldName === "pas_foto_url" ? "image/jpeg,image/jpg,image/png" : "image/*,.pdf";
+
     return (
       <div className="space-y-2">
         <label className="block text-sm font-medium text-gray-700">{label}</label>
 
-        <input type="file" name={fieldName} onChange={handleFileChange} accept="image/*,.pdf" className="hidden" id={fieldName} disabled={isUploading} />
+        <input type="file" name={fieldName} onChange={handleFileChange} accept={acceptAttribute} className="hidden" id={fieldName} disabled={isUploading} />
 
         {isUploading ? (
           <div className="border-2 border-dashed border-[#207D96] rounded-xl text-center bg-blue-50/50 h-32 flex items-center justify-center">

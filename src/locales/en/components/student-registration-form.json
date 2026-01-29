@@ -86,6 +86,7 @@
   "form.toast.validation.required": "Please fill in all required fields.",
   "form.toast.validation.ktp.ijazah": "Please upload both ID Card and Degree.",
   "form.toast.validation.upload.wait": "Please wait for file uploads to complete.",
+  "form.toast.validation.pas.foto.image.only": "Photo only accepts image files (JPG, JPEG, PNG).",
   "form.toast.submit.success": "Data saved successfully!",
   "form.toast.submit.error": "Failed to save data",
   "form.toast.kartu.preview.error": "Failed to load card preview",

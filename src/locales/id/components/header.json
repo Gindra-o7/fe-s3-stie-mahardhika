@@ -1,9 +1,13 @@
 {
-  "nav.home": "Beranda",
-  "nav.profile": "Profil Prodi",
-  "nav.curriculum": "Kurikulum",
-  "nav.cost": "Biaya",
-  "nav.registration": "Tata Cara Pendaftaran",
+  "nav.academic": "Akademik",
+  "nav.howtoapply": "Cara Daftar",
+  "nav.facility": "Fasilitas",
+  "nav.concentration": "Konsentrasi",
+  "nav.experience": "Pengalaman Mahasiswa",
+  "nav.research": "Pendanaan dan Dukungan Penelitian",
+  "nav.placement": "Penempatan Kerja",
+  "nav.staff": "Dosen dan Staf",
+  "nav.news": "Berita",
   "button.login": "Masuk",
   "button.register": "Daftar Sekarang",
   "button.logout": "Keluar"

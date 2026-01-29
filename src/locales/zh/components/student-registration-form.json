@@ -86,6 +86,7 @@
   "form.toast.validation.required": "请填写所有必填字段。",
   "form.toast.validation.ktp.ijazah": "请上传身份证和学位证书。",
   "form.toast.validation.upload.wait": "请等待文件上传完成。",
+  "form.toast.validation.pas.foto.image.only": "照片仅接受图片文件（JPG、JPEG、PNG）。",
   "form.toast.submit.success": "数据保存成功！",
   "form.toast.submit.error": "保存数据失败",
   "form.toast.kartu.preview.error": "加载卡片预览失败",
