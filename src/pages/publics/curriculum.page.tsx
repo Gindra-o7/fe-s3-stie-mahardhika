@@ -97,13 +97,14 @@ const ConcentrationTable = ({ title, icon: Icon, color, courses }: Concentration
 
 const CurriculumPage = () => {
   const { t } = useLanguage();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Simulate loading time
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
     }, 2000); // 2 seconds loading time
 
     return () => clearTimeout(timer);

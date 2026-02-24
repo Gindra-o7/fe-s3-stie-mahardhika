@@ -13,7 +13,7 @@ import pic_1 from "@/assets/components/international-support/pic_1.webp";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const InternationalSupportPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -21,6 +21,7 @@ const InternationalSupportPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

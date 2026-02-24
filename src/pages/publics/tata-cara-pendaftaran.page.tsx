@@ -7,7 +7,7 @@ import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 import RegistrationProcedure from "@/components/tata-cara-pendaftaran/RegistrationProcedure";
 
 const TataCaraPendaftaranPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -15,6 +15,7 @@ const TataCaraPendaftaranPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

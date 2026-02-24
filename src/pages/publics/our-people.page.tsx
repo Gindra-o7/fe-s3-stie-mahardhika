@@ -12,7 +12,7 @@ import Testimonials from "@/components/our-people/Testimonials";
 import Network from "@/components/our-people/Network";
 
 const OurPeoplePage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -20,6 +20,7 @@ const OurPeoplePage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

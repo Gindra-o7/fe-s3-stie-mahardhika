@@ -13,7 +13,7 @@ import OurPeople from "@/components/about/OurPeople";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const AboutPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -21,6 +21,7 @@ const AboutPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

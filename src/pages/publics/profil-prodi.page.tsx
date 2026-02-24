@@ -7,7 +7,7 @@ import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 import StudyProfile from "@/components/profil-prodi/StudyProfile";
 
 const ProfilProdiPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -15,6 +15,7 @@ const ProfilProdiPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

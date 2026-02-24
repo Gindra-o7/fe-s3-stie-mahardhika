@@ -16,7 +16,7 @@ import pic_2 from "@/assets/components/how-to-apply/pic_2.webp";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const HowToApplyPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -24,6 +24,7 @@ const HowToApplyPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

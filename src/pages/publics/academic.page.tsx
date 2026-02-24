@@ -16,7 +16,7 @@ import pic_1 from "@/assets/components/academics/pic_1.webp";
 import pic_2 from "@/assets/components/academics/pic_2.webp";
 
 const AcademicPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -24,6 +24,7 @@ const AcademicPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

@@ -9,7 +9,7 @@ import Hero from "@/components/facilities/Hero";
 import Advantage from "@/components/facilities/Advantage";
 
 const FacilityPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -17,6 +17,7 @@ const FacilityPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

@@ -7,7 +7,7 @@ import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 import TuitionFees from "@/components/biaya/TuitionFees";
 
 const BiayaPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -15,6 +15,7 @@ const BiayaPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

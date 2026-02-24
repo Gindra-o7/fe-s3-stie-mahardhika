@@ -12,7 +12,7 @@ import pic_1 from "@/assets/components/career-opportunity/pic_1.webp"
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const CareerOpportunityPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -20,6 +20,7 @@ const CareerOpportunityPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);

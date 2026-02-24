@@ -18,7 +18,7 @@ import pic_4 from "@/assets/components/landing/pic_4.webp";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const Landing = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
 
   useEffect(() => {
     const img = new Image();
@@ -26,6 +26,7 @@ const Landing = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
       }, 1000);
     };
   }, []);
