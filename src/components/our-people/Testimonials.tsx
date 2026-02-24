@@ -1,35 +1,35 @@
-import TestimonialCard from "@/components/ui/testimonial-card";
+// import TestimonialCard from "@/components/ui/testimonial-card";
 import { useLanguage } from "@/contexts/LanguageContext";
-import user1 from "@/assets/components/landing/testimonials/user-1.webp";
-import user2 from "@/assets/components/landing/testimonials/user-2.webp";
-import user3 from "@/assets/components/landing/testimonials/user-3.webp";
-import user4 from "@/assets/components/landing/testimonials/user-4.webp";
+// import user1 from "@/assets/components/landing/testimonials/user-1.webp";
+// import user2 from "@/assets/components/landing/testimonials/user-2.webp";
+// import user3 from "@/assets/components/landing/testimonials/user-3.webp";
+// import user4 from "@/assets/components/landing/testimonials/user-4.webp";
 
 const Testimonials = () => {
   const { t } = useLanguage();
 
-  const testimonialsData = [
-    {
-      quote: t("people.testimonials.items.0.quote"),
-      avatar: user1,
-      name: t("people.testimonials.items.0.name"),
-    },
-    {
-      quote: t("people.testimonials.items.1.quote"),
-      avatar: user2,
-      name: t("people.testimonials.items.1.name"),
-    },
-    {
-      quote: t("people.testimonials.items.2.quote"),
-      avatar: user3,
-      name: t("people.testimonials.items.2.name"),
-    },
-    {
-      quote: t("people.testimonials.items.3.quote"),
-      avatar: user4,
-      name: t("people.testimonials.items.3.name"),
-    },
-  ];
+  // const testimonialsData = [
+  //   {
+  //     quote: t("people.testimonials.items.0.quote"),
+  //     avatar: user1,
+  //     name: t("people.testimonials.items.0.name"),
+  //   },
+  //   {
+  //     quote: t("people.testimonials.items.1.quote"),
+  //     avatar: user2,
+  //     name: t("people.testimonials.items.1.name"),
+  //   },
+  //   {
+  //     quote: t("people.testimonials.items.2.quote"),
+  //     avatar: user3,
+  //     name: t("people.testimonials.items.2.name"),
+  //   },
+  //   {
+  //     quote: t("people.testimonials.items.3.quote"),
+  //     avatar: user4,
+  //     name: t("people.testimonials.items.3.name"),
+  //   },
+  // ];
 
   return (
     <section className="py-16 md:py-20 bg-white">
@@ -43,11 +43,11 @@ const Testimonials = () => {
         </div>
 
         {/* Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonialsData.map((testimonial, index) => (
             <TestimonialCard key={index} quote={testimonial.quote} avatar={testimonial.avatar} name={testimonial.name} index={index} />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
