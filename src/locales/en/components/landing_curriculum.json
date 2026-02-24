@@ -1,0 +1,33 @@
+{
+  "landing_curriculum": {
+    "title": "CURRICULUM",
+    "description": "This program offers an <0>adaptive 42-credit curriculum</0> combining structured learning, in-depth research, colloquium, international publication, and strategic dissertation. Designed specifically for <1>professionals, academics, and executives</1>, this program can be completed in <2>6 semesters (3 years)</2> with a focused and progressive study flow.",
+    "taught_by": "Curriculum {{name}} is taught by:",
+    "items": [
+      {
+        "name": "A",
+        "lecturers": ["Lecturer/Professor X", "Lecturer/Professor Y", "Lecturer/Professor Z"]
+      },
+      {
+        "name": "B",
+        "lecturers": ["Lecturer/Professor X", "Lecturer/Professor Y", "Lecturer/Professor Z"]
+      },
+      {
+        "name": "C",
+        "lecturers": ["Lecturer/Professor X", "Lecturer/Professor Y", "Lecturer/Professor Z"]
+      },
+      {
+        "name": "D",
+        "lecturers": ["Lecturer/Professor X", "Lecturer/Professor Y", "Lecturer/Professor Z"]
+      },
+      {
+        "name": "E",
+        "lecturers": ["Lecturer/Professor X", "Lecturer/Professor Y", "Lecturer/Professor Z"]
+      },
+      {
+        "name": "F",
+        "lecturers": ["Lecturer/Professor X", "Lecturer/Professor Y", "Lecturer/Professor Z"]
+      }
+    ]
+  }
+}

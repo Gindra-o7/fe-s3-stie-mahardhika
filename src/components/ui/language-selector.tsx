@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Languages } from "lucide-react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
+import { getRouteKeyFromPath, getRoutePath } from "@/constants/route-config";
 import indonesiaFlag from "@/assets/indonesia.svg";
 import unitedKingdomFlag from "@/assets/united-kingdom.svg";
 import chinaFlag from "@/assets/china.svg";
@@ -19,8 +20,30 @@ const LanguageSelector: React.FC = () => {
   const currentLanguage = languages.find((lang) => lang.code === language);
 
   const handleLanguageChange = (langCode: Language) => {
-    setLanguage(langCode);
-    setIsOpen(false);
+    // Dapatkan rute untuk bahasa yang baru dipilih terlebih dahulu
+    const currentRouteKey = getRouteKeyFromPath(window.location.pathname);
+    let willRedirect = false;
+
+    if (currentRouteKey) {
+      const newPath = getRoutePath(currentRouteKey, langCode);
+      if (newPath !== window.location.pathname) {
+        willRedirect = true;
+        // Simpan preferensi bahasa terlebih dahulu sebelum berpindah halaman
+        // Kita juga harus secara manual mengubah "i18nextLng" agar plugin LanguageDetector mendeteksinya segera saat reload
+        localStorage.setItem("language", langCode);
+        localStorage.setItem("i18nextLng", langCode);
+        setIsOpen(false);
+        // Melakukan reload paksa ke rute baru (auto refresh)
+        // tanpa mengubah state i18next saat ini, agar tidak ada visual glitch
+        window.location.assign(newPath);
+      }
+    }
+
+    // Jika tidak ada redirect (misal, rute sama atau tidak ditemukan), ganti bahasa secara halus (SPA state)
+    if (!willRedirect) {
+      setLanguage(langCode);
+      setIsOpen(false);
+    }
   };
 
   return (

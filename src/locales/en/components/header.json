@@ -1,13 +1,10 @@
 {
+  "nav.home": "Home",
   "nav.academic": "Academic",
+  "nav.international_support": "International Support",
+  "nav.career_opportunity": "Career Opportunity",
   "nav.howtoapply": "How to Apply",
-  "nav.facility": "Facilities",
-  "nav.concentration": "Concentrations",
-  "nav.experience": "Student Experience",
-  "nav.research": "Research Funding and Support",
-  "nav.placement": "Placement",
-  "nav.staff": "Faculty and Staff",
-  "nav.news": "News",
+  "nav.about": "About",
   "button.login": "Login",
   "button.register": "Register Now",
   "button.logout": "Logout"

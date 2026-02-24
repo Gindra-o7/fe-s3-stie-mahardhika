@@ -1,0 +1,47 @@
+{
+  "landing_career": {
+    "title": "PELUANG KARIR",
+    "items": [
+      {
+        "title": "Pemimpin Transformasi Nasional",
+        "description": "memimpin perubahan lintas institusi melalui perumusan strategi, orkestrasi implementasi, dan pencapaian kinerja yang terukur."
+      },
+      {
+        "title": "Peneliti Doktoral Berdampak",
+        "description": "menghasilkan riset orisinal yang relevan dan berorientasi solusi untuk kebijakan publik, industri, serta pembangunan."
+      },
+      {
+        "title": "Penggerak Inovasi dan Hilirisasi Riset",
+        "description": "mengonversi temuan riset menjadi program, model, atau produk yang bernilai dan aplikatif bagi organisasi maupun daerah."
+      },
+      {
+        "title": "Strategis Pembangunan dan Daya Saing Regional",
+        "description": "menyusun peta jalan investasi, pertumbuhan, dan penguatan daya saing wilayah berbasis analisis dan bukti (evidence-based)."
+      },
+      {
+        "title": "Eksekutif Strategi dan Pertumbuhan Korporasi",
+        "description": "merumuskan strategi ekspansi, positioning, dan pertumbuhan berkelanjutan yang terukur serta scalable."
+      },
+      {
+        "title": "Analis Kebijakan Berbasis Data",
+        "description": "menyusun analisis risiko, memodelkan dampak, dan menghasilkan rekomendasi kebijakan yang presisi, prudent, dan dapat dipertanggungjawabkan."
+      },
+      {
+        "title": "Arsitek Tata Kelola dan ESG",
+        "description": "merancang dan memperkuat tata kelola organisasi serta praktik ESG yang transparan, akuntabel, dan tangguh terhadap krisis."
+      },
+      {
+        "title": "Pemimpin Reformasi Birokrasi dan Digital Government",
+        "description": "membangun sistem layanan publik yang efektif, efisien, dan berbasis teknologi untuk peningkatan kualitas layanan."
+      },
+      {
+        "title": "Spesialis Kerja Sama Internasional",
+        "description": "mengelola inisiatif lintas negara dari perencanaan, negosiasi, skema pendanaan, hingga pemenuhan deliverable secara profesional."
+      },
+      {
+        "title": "Pemimpin Transformasi Korporasi/BUMN",
+        "description": "memimpin transformasi organisasi agar lebih adaptif, digital, efisien, dan kompetitif di tingkat global."
+      }
+    ]
+  }
+}

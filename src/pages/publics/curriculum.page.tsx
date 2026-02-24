@@ -3,7 +3,7 @@ import { BookOpen, Users, TrendingUp, Target, ChevronDown, ChevronUp, FileText, 
 import Header from "@/components/global/Header";
 import Footer from "@/components/global/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { LoadingScreen } from "@/components/landing/Loading";
+import { LoadingScreen } from "@/components/global/Loading";
 import { ModalRegisOnline } from "@/components/landing/ModalRegisOnline";
 
 interface Course {

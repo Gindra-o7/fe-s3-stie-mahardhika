@@ -6,77 +6,73 @@
     "information": {
       "title": "REGISTRATION INFORMATION",
       "requirements": {
-        "title": "Requirements",
-        "items": ["Bachelor's Degree / D4", "Minimum GPA 2.75", "Academic Transcript", "ID Card (KTP)", "4x6 Color Photo", "Pass Academic Potential Test"]
+        "title": "REQUIREMENTS",
+        "items": ["Master's Degree Diploma", "Master's Transcript", "ID Card (KTP)", "4x6 Color Photo", "Pass Academic Potential Test"]
       },
       "upload": {
-        "title": "Upload Documents",
+        "title": "UPLOAD DOCUMENTS",
         "subtitle": "Use the online form to upload documents:",
         "items": ["CV / Curriculum Vitae", "Academic Transcript", "SOP (Statement of Purpose) / Recommendation Letter", "Proof of English Proficiency", "ID Card for Citizens or Passport for Foreigners"]
       },
       "scheme": {
-        "title": "Registration Scheme",
+        "title": "REGISTRATION SCHEME",
         "steps": {
           "1": {
             "title": "1. REGISTRATION",
-            "content": ["FILL BIO DATA", "DATA: NAME, EMAIL, WA, ID NUMBER", "PAY IDR 3,000,000", "VIA BANK/E-WALLET AND UPLOAD PROOF CHECK EMAIL/WA FOR USERNAME & PASSWORD"]
+            "content": ["FILL BIO DATA", "DATA: NAME, EMAIL, WA, ID NUMBER", "PAY IDR 1,000,000", "TRANSFER TO BANK ACCOUNT IN THE NAME OF YAYASAN MADIKA AND UPLOAD PROOF CHECK EMAIL/WA FOR USERNAME & PASSWORD"]
           },
           "2": {
             "title": "2. COMPLETE FILES",
-            "content": [
-              "UPLOAD CORE DOCUMENTS:",
-              "ID CARD, FAMILY CARD, MASTER'S DIPLOMA & TRANSCRIPT LEGALIZED, BAN-PT ACCREDITATION",
-              "SUPPORTING DOCUMENTS: SCIENTIFIC WORK/CERTIFICATE, ENGLISH CERTIFICATE, DISSERTATION IDEA, 2 RECOMMENDATION LETTERS"
-            ]
+            "content": ["UPLOAD CORE DOCUMENTS:", "CORE REQUIREMENTS", "SUPPORTING REQUIREMENTS", "OTHER REQUIREMENTS \"IF NECESSARY\""]
           },
           "3": {
             "title": "3. SELECTION",
-            "content": ["PRINT SPMB CARD", "WAIT FOR INTERVIEW SCHEDULE", "JOIN ONLINE INTERVIEW", "RECEIVE SSO CODE AND E-LEARNING CODE"]
+            "content": ["PRINT SPMB CARD", "WAIT FOR INTERVIEW SCHEDULE", "JOIN ONLINE INTERVIEW RECEIVE SSO CODE AND E-LEARNING CODE"]
           }
         }
       }
     },
+    "tutorial": {
+      "items": [
+        "Prospective Participants create a registration account and make payment first through the page https://pmbs3.stiemahardhika.ac.id/ and select the \"REGISTRATION\" menu",
+        "Prospective Participants then receive a registration account verification email",
+        "Prospective Participants are expected to check account notifications and change the new password (Note if necessary!). If the email does not enter the inbox, Prospective Participants can look in the spam box.",
+        "Prospective participants then open the page https://pmbs3.stiemahardhika.ac.id/login and select \"Login\" (at the top right) using the new user and password.",
+        "Fill in biodata, then click \"FINALIZATION\"",
+        "Participants upload data",
+        "Prospective participants then print the Registration Card through their registration account."
+      ]
+    },
     "form": {
-      "title": "APPLICATION FORM",
-      "personal_info": "PERSONAL INFORMATION",
+      "header": "APPLICATION FORM",
+      "title": "PERSONAL DATA INPUT INCLUDES",
       "fields": {
-        "first_name": {
-          "label": "First Name",
-          "placeholder": "Enter First Name"
-        },
-        "last_name": {
-          "label": "Last Name",
-          "placeholder": "Enter Last Name"
-        },
-        "dob": {
-          "label": "Date of Birth",
-          "placeholder": "Enter your Date of Birth"
-        },
-        "nationality": {
-          "label": "Nationality",
-          "placeholder": "Enter Nationality"
+        "full_name": {
+          "label": "Full Name",
+          "placeholder": "Full Name"
         },
         "email": {
           "label": "Email",
-          "placeholder": "Enter your Email"
+          "placeholder": "Email"
         },
-        "phone": {
-          "label": "Phone",
-          "placeholder": "Enter Phone Number"
+        "whatsapp": {
+          "label": "WhatsApp No",
+          "placeholder": "WhatsApp No"
         },
-        "address": {
-          "label": "Current Address",
-          "placeholder": "Enter your Address"
+        "id_card": {
+          "label": "ID Card Number",
+          "placeholder": "ID Card Number"
         },
-        "message": {
-          "label": "Message",
-          "placeholder": "Enter your Message here..."
+        "diploma": {
+          "label": "Upload Master's Degree (Minimum Accreditation Very Good or B)",
+          "placeholder": "Upload Master's Degree"
         }
       },
       "submit": "Send Your Message"
     },
     "cost": {
       "title": "FEES",
+      "description": "1. Latest Doctoral Program Tuition Fees — Information is provided that it can be paid in installments. e.g., total fee 50m, tuition / semester = 30m = can be paid in monthly installments (5m x 6 months)",
       "items": [
         { "label": "Registration", "value": "Rp. 1.000.000" },
         { "label": "Tuition Fee", "value": "Rp 50.000.000" },
@@ -84,8 +80,73 @@
       ],
       "additional": [
         { "label": "Dissertation Activity", "value": "Rp 20.000.000" },
-        { "label": "TOTAL", "value": "Rp 106.000.000" }
+        { "label": "TOTAL", "value": "Rp 1.010.000.000" }
       ]
+    },
+    "detailed_cost": {
+      "title": "FEES",
+      "description": "1. Latest Doctoral Program Tuition Fees — Information is provided that it can be paid in installments. e.g., total fee 50m, tuition / semester = 30m = can be paid in monthly installments (5m x 6 months)",
+      "table": {
+        "headers": {
+          "termin": "Term",
+          "keterangan": "Description",
+          "waktu": "Time",
+          "ukt": "Tuition Fee",
+          "dpp": "Development Fee"
+        },
+        "rows": [
+          {
+            "termin": "I",
+            "keterangan": "Registration",
+            "waktu": "Jan - Feb 2026",
+            "ukt": "2.000.000",
+            "dpp": "-"
+          },
+          {
+            "termin": "II",
+            "keterangan": "Semester 1",
+            "waktu": "March 2026",
+            "ukt": "10.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "III",
+            "keterangan": "Semester 2",
+            "waktu": "August 2026",
+            "ukt": "12.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "IV",
+            "keterangan": "Semester 3",
+            "waktu": "February 2027",
+            "ukt": "12.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "V",
+            "keterangan": "Semester 4",
+            "waktu": "August 2027",
+            "ukt": "12.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "VI",
+            "keterangan": "Semester 5",
+            "waktu": "February 2028",
+            "ukt": "12.000.000",
+            "dpp": "-"
+          },
+          {
+            "termin": "VII",
+            "keterangan": "Semester 6",
+            "waktu": "August 2028",
+            "ukt": "12.000.000",
+            "dpp": "-"
+          }
+        ],
+        "notes": ["Total Tuition Fee : Rp 72.000.000", "Total Development Fee : Rp 12.000.000"]
+      }
     }
   }
 }

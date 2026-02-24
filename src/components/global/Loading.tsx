@@ -4,7 +4,7 @@ import LogoMahardhika from "@/assets/BOLD_MAHARDHIKA.png";
 export const LoadingScreen = () => {
   return (
     <motion.div
-      className="fixed inset-0 bg-gradient-to-br from-[#207D96] via-[#1B3F6E] to-[#0F2947] flex items-center justify-center z-[100]"
+      className="fixed inset-0 bg-linear-to-br from-[#207D96] via-[#1B3F6E] to-[#0F2947] flex items-center justify-center z-100"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export const LoadingScreen = () => {
             <motion.img
               src={LogoMahardhika}
               alt="Logo Mahasiswa"
-              className="w-[200px] h-[200]"
+              className="w-50 h-[200]"
               animate={{
                 y: [0, -10, 0],
               }}

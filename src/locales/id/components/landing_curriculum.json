@@ -1,0 +1,33 @@
+{
+  "landing_curriculum": {
+    "title": "KURIKULUM",
+    "description": "Program ini menghadirkan <0>kurikulum adaptif 42 SKS</0> yang memadukan pembelajaran terstruktur, riset mendalam, kolokium, publikasi internasional, dan disertasi strategis. Dirancang khusus bagi <1>profesional, akademisi, dan eksekutif</1>, program ini dapat ditempuh dalam <2>6 semester (3 tahun)</2> dengan alur studi yang terarah dan progresif",
+    "taught_by": "Kurikulum {{name}} diajarkan oleh :",
+    "items": [
+      {
+        "name": "A",
+        "lecturers": ["Dosen/Profesor X", "Dosen/Profesor Y", "Dosen/Profesor Z"]
+      },
+      {
+        "name": "B",
+        "lecturers": ["Dosen/Profesor X", "Dosen/Profesor Y", "Dosen/Profesor Z"]
+      },
+      {
+        "name": "C",
+        "lecturers": ["Dosen/Profesor X", "Dosen/Profesor Y", "Dosen/Profesor Z"]
+      },
+      {
+        "name": "D",
+        "lecturers": ["Dosen/Profesor X", "Dosen/Profesor Y", "Dosen/Profesor Z"]
+      },
+      {
+        "name": "E",
+        "lecturers": ["Dosen/Profesor X", "Dosen/Profesor Y", "Dosen/Profesor Z"]
+      },
+      {
+        "name": "F",
+        "lecturers": ["Dosen/Profesor X", "Dosen/Profesor Y", "Dosen/Profesor Z"]
+      }
+    ]
+  }
+}

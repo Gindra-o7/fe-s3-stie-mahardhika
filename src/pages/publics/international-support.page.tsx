@@ -1,12 +1,16 @@
 import Header from "@/components/global/Header";
 import Footer from "@/components/global/Footer";
-import { LoadingScreen } from "@/components/landing/Loading";
+import { LoadingScreen } from "@/components/global/Loading";
 import { useEffect, useState } from "react";
 
 import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 
 import Hero from "@/components/international-support/Hero";
 import Title from "@/components/international-support/Title";
+import Certified from "@/components/international-support/Certified";
+
+import pic_1 from "@/assets/components/international-support/pic_1.webp";
+import ScrollToTop from "@/components/global/ScrollToTop";
 
 const InternationalSupportPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +34,11 @@ const InternationalSupportPage = () => {
       <main>
         <Hero />
         <Title />
+        <div className="w-full overflow-hidden">
+          <img src={pic_1} alt="Picture" className="w-full h-auto" />
+        </div>
+        <Certified />
+        <ScrollToTop />
       </main>
       <Footer />
     </div>

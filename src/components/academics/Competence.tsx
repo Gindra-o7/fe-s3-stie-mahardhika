@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { TitleText } from "@/components/ui/title-text";
 
 const Competence = () => {
   const { t } = useLanguage();
@@ -27,12 +28,8 @@ const Competence = () => {
     <section className="py-20 bg-[#F3F4F6]">
       <div className="container mx-auto px-4 md:px-20">
         <div className="mb-12">
-          <motion.div className="inline-block relative" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide">{t("academic.competence.title")}</h2>
-            <motion.div className="h-1 bg-[#00BCD4] mt-4" initial={{ width: 0 }} whileInView={{ width: "100%" }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.3 }} />
-          </motion.div>
-
-          <motion.p className="mt-6 text-gray-600 max-w-3xl leading-relaxed" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+          <TitleText>{t("academic.competence.title")}</TitleText>
+          <motion.p className="mt-2 text-gray-600 max-w-3xl leading-relaxed" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
             {t("academic.competence.subtitle")}
           </motion.p>
         </div>

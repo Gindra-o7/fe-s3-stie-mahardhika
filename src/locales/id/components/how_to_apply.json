@@ -6,73 +6,73 @@
     "information": {
       "title": "INFORMASI PENDAFTARAN",
       "requirements": {
-        "title": "Persyaratan",
-        "items": ["Gelar Sarjana / D4", "IPK minimal 2,75", "Transkrip nilai", "KTP", "Foto berwarna 4x6", "Lulus Tes Potensi Akademik"]
+        "title": "PERSYARATAN",
+        "items": ["Ijasah S2", "Transkrip S2", "KTP", "Foto berwarna 4x6", "Lulus Tes Potensi Akademik"]
       },
       "upload": {
-        "title": "Unggah Dokumen",
+        "title": "UNGGAH DOKUMEN",
         "subtitle": "Gunakan formulir online untuk mengunggah/upload dokumen:",
         "items": ["CV / Curriculum Vitae", "Transkrip nilai", "SOP (Statement of Purpose)/ Surat rekomendasi", "Bukti kemampuan Bahasa Inggris", "KTP Bagi WNI atau Paspor Bagi WNA"]
       },
       "scheme": {
-        "title": "Skema Pendaftaran",
+        "title": "SKEMA PENDAFTARAN",
         "steps": {
           "1": {
             "title": "1. REGISTRASI",
-            "content": ["ISI BIO DATA", "DATA: NAMA, EMAIL, WA, NO. KTP", "BAYAR RP 3.000.000", "VIA BANK/ E-WALLET DAN UNGGAH BUKTI CEK EMAIL/ WA UNTUK USERNAME & PASSWORD"]
+            "content": ["ISI BIO DATA", "DATA: NAMA, EMAIL, WA, NO. KTP", "BAYAR RP 1.000.000", "TRANSFER KE BANK DENGAN NO REKENING A/N YAYASAN MADIKA DAN UNGGAH BUKTI CEK EMAIL/WA UNTUK USERNAME & PASSWORD"]
           },
           "2": {
             "title": "2. LENGKAPI BERKAS",
-            "content": ["UNGGAH DOKUMEN POKOK:", "KTP, KK, IJAZAH & TRANSKRIP S2 LEGALISASI, AKREDITASI BAN-PT", "DOKUMEN PENDUKUNG: KARYA ILMIAH/SERTIFIKAT, SERTIFIKAT INGGRIS, IDE DISERTASI, 2 SURAT REKOMENDASI"]
+            "content": ["UNGGAH DOKUMEN POKOK:", "PERSYARATAN POKOK", "PERSYARATAN PENDUKUNG", "PERSYARATAN LAIN \"JIKA DIPERLUKAN\""]
           },
           "3": {
             "title": "3. SELEKSI",
-            "content": ["CETAK KARTU SPMB", "TUNGGU JADWAL WAWANCARA", "IKUTI WAWANCARA ONLINE", "TERIMA KODE SSO DAN KODE E-LEARNING"]
+            "content": ["CETAK KARTU SPMB", "TUNGGU JADWAL WAWANCARA", "IKUTI WAWANCARA ONLINE TERIMA KODE SSO DAN KODE E-LEARNING"]
           }
         }
       }
     },
+    "tutorial": {
+      "items": [
+        "Calon Peserta membuat akun pendaftaran dan melakukan pembayaran terlebih dahulu melalui laman https://pmbs3.stiemahardhika.ac.id/ dan memilih menu \"REGISTRASI\"",
+        "Calon Peserta kemudian memperoleh email verifikasi akun pendaftaran",
+        "Diharapkan kepada Calon Peserta untuk mengecek notifikasi akun dan merubah password baru (Catat bila perlu!) . Jika email tidak masuk pada kotak masuk/inbox, Calon peserta bisa melihat pada kotak spam.",
+        "Calon peserta kemudian membuka laman https://pmbs3.stiemahardhika.ac.id/login dan memilih \"Login\" (di bagian atas kanan) menggunakan user dan password yang baru.",
+        "Isi biodata, kemudian klik \"FINALISASI\"",
+        "Peserta mengunggah data",
+        "Calon peserta kemudian mencetak Kartu Pendaftaran melalui akun pendaftaran yang dimiliki."
+      ]
+    },
     "form": {
-      "title": "FORMULIR APLIKASI",
-      "personal_info": "INFORMASI PRIBADI",
+      "header": "FORMULIR APLIKASI",
+      "title": "INPUT DATA DIRI MELIPUTI",
       "fields": {
-        "first_name": {
-          "label": "Nama Depan",
-          "placeholder": "Masukkan Nama Depan"
-        },
-        "last_name": {
-          "label": "Nama Belakang",
-          "placeholder": "Masukkan Nama Belakang"
-        },
-        "dob": {
-          "label": "Tanggal Lahir",
-          "placeholder": "Masukkan Tanggal Lahir Anda"
-        },
-        "nationality": {
-          "label": "Kewarganegaraan",
-          "placeholder": "Masukkan Kewarganegaraan"
+        "full_name": {
+          "label": "Nama Lengkap",
+          "placeholder": "Nama Lengkap"
         },
         "email": {
           "label": "Email",
-          "placeholder": "Masukkan Email Anda"
+          "placeholder": "Email"
         },
-        "phone": {
-          "label": "Telepon",
-          "placeholder": "Masukkan Nomor Telepon"
+        "whatsapp": {
+          "label": "No WhatsApp",
+          "placeholder": "No WhatsApp"
         },
-        "address": {
-          "label": "Alamat Saat Ini",
-          "placeholder": "Masukkan Alamat Anda"
+        "id_card": {
+          "label": "Nomor KTP",
+          "placeholder": "Nomor KTP"
         },
-        "message": {
-          "label": "Pesan",
-          "placeholder": "Masukkan Pesan Anda di sini..."
+        "diploma": {
+          "label": "Upload Ijazah S2 (Minimal Terakreditasi Baik Sekali atau B)",
+          "placeholder": "Upload Ijazah S2"
         }
       },
       "submit": "Kirim Pesan Anda"
     },
     "cost": {
       "title": "BIAYA",
+      "description": "1. Biaya Kuliah S3 Terbaru — Lalu di infokan tentang bahwa bisa dicicil. misal total biaya 50jt, spp / semester = 30jt = bisa dicicil perbulan (5jt x 6 bulan)",
       "items": [
         { "label": "Pendaftaran", "value": "Rp. 1.000.000" },
         { "label": "SPP", "value": "Rp 50.000.000" },
@@ -80,8 +80,73 @@
       ],
       "additional": [
         { "label": "Kegiatan Disertasi", "value": "Rp 20.000.000" },
-        { "label": "TOTAL", "value": "Rp 106.000.000" }
+        { "label": "TOTAL", "value": "Rp 1.010.000.000" }
       ]
+    },
+    "detailed_cost": {
+      "title": "BIAYA",
+      "description": "1. Biaya Kuliah S3 Terbaru — Lalu di infokan tentang bahwa bisa dicicil. misal total biaya 50jt, spp / semester = 30jt = bisa dicicil perbulan (5jt x 6 bulan)",
+      "table": {
+        "headers": {
+          "termin": "Termin",
+          "keterangan": "Keterangan",
+          "waktu": "Waktu",
+          "ukt": "UKT",
+          "dpp": "DPP"
+        },
+        "rows": [
+          {
+            "termin": "I",
+            "keterangan": "Pendaftaran",
+            "waktu": "Jan - Feb 2026",
+            "ukt": "2.000.000",
+            "dpp": "-"
+          },
+          {
+            "termin": "II",
+            "keterangan": "Semester 1",
+            "waktu": "Maret 2026",
+            "ukt": "10.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "III",
+            "keterangan": "Semester 2",
+            "waktu": "Agustus 2026",
+            "ukt": "12.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "IV",
+            "keterangan": "Semester 3",
+            "waktu": "Februari 2027",
+            "ukt": "12.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "V",
+            "keterangan": "Semester 4",
+            "waktu": "Agustus 2027",
+            "ukt": "12.000.000",
+            "dpp": "3.000.000"
+          },
+          {
+            "termin": "VI",
+            "keterangan": "Semester 5",
+            "waktu": "Februari 2028",
+            "ukt": "12.000.000",
+            "dpp": "-"
+          },
+          {
+            "termin": "VII",
+            "keterangan": "Semester 6",
+            "waktu": "Agustus 2028",
+            "ukt": "12.000.000",
+            "dpp": "-"
+          }
+        ],
+        "notes": ["Total UKT : Rp 72.000.000", "Total DPP : Rp 12.000.000"]
+      }
     }
   }
 }

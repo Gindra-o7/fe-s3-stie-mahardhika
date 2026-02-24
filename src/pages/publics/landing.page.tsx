@@ -1,15 +1,21 @@
 import Header from "@/components/global/Header";
 import Hero from "@/components/landing/Hero";
-import Research from "@/components/landing/Research";
-import Features from "@/components/landing/Features";
-import Courses from "@/components/landing/Courses";
+import Department from "@/components/landing/Department";
+import Curriculum from "@/components/landing/Curriculum";
+import Career from "@/components/landing/Career";
 import Testimonials from "@/components/landing/Testimonials";
+import Cost from "@/components/landing/Cost";
+import Quotes from "@/components/landing/Quotes";
 import Footer from "@/components/global/Footer";
-import { LoadingScreen } from "@/components/landing/Loading";
+import { LoadingScreen } from "@/components/global/Loading";
 import { useEffect, useState } from "react";
 
 import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
-import picImage from "@/assets/components/pic.png";
+import pic_1 from "@/assets/components/landing/pic_1.webp";
+import pic_2 from "@/assets/components/landing/pic_2.webp";
+import pic_3 from "@/assets/components/landing/pic_3.webp";
+import pic_4 from "@/assets/components/landing/pic_4.webp";
+import ScrollToTop from "@/components/global/ScrollToTop";
 
 const Landing = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,15 +38,27 @@ const Landing = () => {
       <Header />
       <main>
         <Hero />
-        <Research />
-        <Features />
-        <Courses />
-        <Testimonials />
+        <Department />
         <div className="w-full overflow-hidden">
-          <img src={picImage} alt="Picture" className="w-full h-auto -mt-20 -mb-80" />
+          <img src={pic_1} alt="Picture" className="w-full h-auto" />
         </div>
+        <Curriculum />
+        <div className="w-full overflow-hidden">
+          <img src={pic_4} alt="Picture" className="w-full h-auto" />
+        </div>
+        <Career />
+        <div className="w-full overflow-hidden">
+          <img src={pic_2} alt="Picture" className="w-full h-auto" />
+        </div>
+        <Testimonials />
+        <Cost />
+        <Quotes />
+        <Footer />
+        <div className="w-full overflow-hidden">
+          <img src={pic_3} alt="Picture" className="w-full h-auto" />
+        </div>
+        <ScrollToTop />
       </main>
-      <Footer />
     </div>
   );
 };

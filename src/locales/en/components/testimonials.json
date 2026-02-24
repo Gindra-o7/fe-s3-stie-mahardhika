@@ -1,23 +1,31 @@
 {
   "testimonials": {
-    "title": "Testimonials",
-    "description": "What students and alumni say about their learning experience in the Doctor of Management Science Program.",
+    "title": "ALUMNI TESTIMONIALS",
+    "description": "",
     "items": [
       {
-        "quote": "This program provides deep insights relevant to today's business challenges.",
-        "name": "Budi Santoso"
+        "name": "Warsilan",
+        "title1": "President Director & Pelindo Marine Service",
+        "title2": "Master of Management / Master of Management STIE Mahardhika",
+        "quote": "\"Studying here helped me understand how to manage organizations more effectively, especially in facing industry dynamics. I felt a tremendous impact on my ability to lead a team and make strategic decisions for the advancement of Pelindo Marine Service.\""
       },
       {
-        "quote": "Competent lecturers and supportive facilities greatly assist in dissertation completion.",
-        "name": "Siti Aminah"
+        "name": "Naftali Akawal",
+        "title1": "Deputy Regent of Puncak, Central Papua",
+        "title2": "Master of Management / Master of Management STIE Mahardhika",
+        "quote": "\"The Master of Management program I took taught me to become a visionary leader with measurable strategies and deep empathy. As a result, I was able to bring innovation to governance in Central Papua.\""
       },
       {
-        "quote": "Extensive networking and inspiring discussions make studying here very valuable.",
-        "name": "Rahmat Hidayat"
+        "name": "Alvian Erwansyah",
+        "title1": "CEO & Founder PT. Adarma Sagraha Pratama",
+        "title2": "Master of Management STIE Mahardhika & MBA - Oregon State University, USA",
+        "quote": "\"STIE Mahardhika Surabaya provided me with a solid foundation in building a company. The modern and practice-based learning approach is highly relevant to current industry needs. Consequently, I was able to develop PT. Adarma Sagraha Pratama into an innovative and highly competitive company.\""
       },
       {
-        "quote": "The adaptive curriculum really helps me in developing my academic career.",
-        "name": "Dewi Lestari"
+        "name": "Tamsil Ainnur Rizal",
+        "title1": "Director of Oleh Oleh Buah Tangan Batu",
+        "title2": "Master of Management / Master of Management STIE Mahardhika",
+        "quote": "\"With STIE Mahardhika's learning approach focusing on innovation and creativity, I was able to develop the Oleh-Oleh Buah Tangan Batu business to become more competitive and sustainable. Studying here truly changed my perspective on business management.\""
       }
     ]
   }

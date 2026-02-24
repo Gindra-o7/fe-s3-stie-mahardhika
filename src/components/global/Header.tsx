@@ -10,36 +10,33 @@ const Header = () => {
   const navigate = useNavigate();
 
   const navItems: { key: string; route: RouteKey }[] = [
+    { key: "nav.home", route: "HOME" },
     { key: "nav.academic", route: "ACADEMIC" },
+    { key: "nav.international_support", route: "INTERNATIONAL_SUPPORT" },
+    { key: "nav.career_opportunity", route: "CAREER_OPPORTUNITY" },
     { key: "nav.howtoapply", route: "HOW_TO_APPLY" },
-    { key: "nav.facility", route: "FACILITY" },
-    { key: "nav.concentration", route: "CURRICULUM" },
-    { key: "nav.experience", route: "COST" },
-    { key: "nav.research", route: "REGISTRATION" },
-    { key: "nav.placement", route: "PLACEMENT" },
-    { key: "nav.staff", route: "STAFF" },
-    { key: "nav.news", route: "NEWS" },
+    { key: "nav.about", route: "ABOUT" },
   ];
 
   return (
     <motion.header className="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200 shadow-sm" style={{ color: "#207D96" }} initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
-      <div className="container mx-auto px-4 flex justify-between items-center h-28">
-        <motion.div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
+      <div className="container mx-auto px-4 flex items-center h-28 gap-8">
+        <motion.div className="flex items-center gap-3 cursor-pointer shrink-0" onClick={() => navigate("/")}>
           <motion.img src={LogoMahardhika} alt="Logo Mahardhika" className="h-24 w-auto" />
         </motion.div>
 
-        <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
+        <nav className="hidden md:flex items-center gap-6 flex-1 justify-start">
           {navItems.map((item, index) => (
             <motion.a
               key={item.key}
               href={getRoutePath(item.route, language)}
-              className="text-[#207D96] hover:text-[#1B3F6E] transition-colors relative group text-sm"
+              className="text-gray-900 hover:text-[#08C9EC] transition-colors relative group text-sm font-medium"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
               {t(item.key)}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#207D96] to-[#1B3F6E] group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-[#08C9EC] group-hover:w-full transition-all duration-300" />
             </motion.a>
           ))}
         </nav>

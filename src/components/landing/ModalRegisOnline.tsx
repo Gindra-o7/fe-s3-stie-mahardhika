@@ -165,7 +165,7 @@ export const ModalRegisOnline = ({ isOpen, onClose }: { isOpen: boolean; onClose
                 href={paymentUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-[#207D96] to-[#1B3F6E] text-white px-6 py-3 rounded-xl hover:shadow-lg transition-all font-semibold flex items-center justify-center gap-2"
+                className="bg-linear-to-r from-[#207D96] to-[#1B3F6E] text-white px-6 py-3 rounded-xl hover:shadow-lg transition-all font-semibold flex items-center justify-center gap-2"
               >
                 Pay Now <ExternalLink className="w-4 h-4" />
               </a>
@@ -189,16 +189,16 @@ export const ModalRegisOnline = ({ isOpen, onClose }: { isOpen: boolean; onClose
                 {t("modal.registration.step")} {currentStep} {t("modal.registration.of")} {totalSteps}
               </p>
               <div className="flex w-full sm:w-2/3 lg:w-1/2 mx-auto mt-2 h-2 bg-gray-200 rounded-full">
-                <motion.div className="bg-gradient-to-r from-[#207D96] to-[#1B3F6E] rounded-full" animate={{ width: `${(currentStep / totalSteps) * 100}%` }} transition={{ duration: 0.5, type: "spring" }} />
+                <motion.div className="bg-linear-to-r from-[#207D96] to-[#1B3F6E] rounded-full" animate={{ width: `${(currentStep / totalSteps) * 100}%` }} transition={{ duration: 0.5, type: "spring" }} />
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col flex-grow overflow-hidden min-h-0">
-              <div className="flex-grow overflow-y-auto pr-1 sm:pr-2 -mr-1 sm:-mr-2">
+            <form onSubmit={handleSubmit} className="flex flex-col grow overflow-hidden min-h-0">
+              <div className="grow overflow-y-auto pr-1 sm:pr-2 -mr-1 sm:-mr-2">
                 <AnimatePresence mode="wait">
                   {currentStep === 1 && (
                     <motion.div key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" transition={{ duration: 0.3 }}>
-                      <div className="bg-gradient-to-br from-gray-50 to-[#207D96]/5 p-4 sm:p-5 lg:p-6 rounded-xl sm:rounded-2xl">
+                      <div className="bg-linear-to-br from-gray-50 to-[#207D96]/5 p-4 sm:p-5 lg:p-6 rounded-xl sm:rounded-2xl">
                         <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
                           <User className="h-4 w-4 sm:h-5 sm:w-5 text-[#207D96]" /> {t("modal.registration.personal.info")}
                         </h3>
@@ -257,7 +257,7 @@ export const ModalRegisOnline = ({ isOpen, onClose }: { isOpen: boolean; onClose
 
                   {currentStep === 2 && (
                     <motion.div key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" transition={{ duration: 0.3 }}>
-                      <div className="bg-gradient-to-br from-gray-50 to-[#207D96]/5 p-4 sm:p-5 lg:p-6 rounded-xl sm:rounded-2xl text-center">
+                      <div className="bg-linear-to-br from-gray-50 to-[#207D96]/5 p-4 sm:p-5 lg:p-6 rounded-xl sm:rounded-2xl text-center">
                         <div className="mb-6 flex justify-center">
                           <div className="p-4 bg-white rounded-full shadow-lg">
                             <CreditCard className="h-12 w-12 text-[#207D96]" />
@@ -304,7 +304,7 @@ export const ModalRegisOnline = ({ isOpen, onClose }: { isOpen: boolean; onClose
                   <motion.button
                     type="button"
                     onClick={handleNext}
-                    className="bg-gradient-to-r from-[#207D96] to-[#1B3F6E] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl hover:shadow-lg hover:shadow-[#207D96]/50 font-semibold transition-all flex items-center justify-center gap-2 text-sm sm:text-base order-1 sm:order-2"
+                    className="bg-linear-to-r from-[#207D96] to-[#1B3F6E] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl hover:shadow-lg hover:shadow-[#207D96]/50 font-semibold transition-all flex items-center justify-center gap-2 text-sm sm:text-base order-1 sm:order-2"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -316,7 +316,7 @@ export const ModalRegisOnline = ({ isOpen, onClose }: { isOpen: boolean; onClose
                     type="button"
                     onClick={handlePay}
                     disabled={isPending}
-                    className="bg-gradient-to-r from-[#207D96] to-[#1B3F6E] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl hover:shadow-lg hover:shadow-[#207D96]/50 font-semibold transition-all flex items-center justify-center gap-2 text-sm sm:text-base order-1 sm:order-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="bg-linear-to-r from-[#207D96] to-[#1B3F6E] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl hover:shadow-lg hover:shadow-[#207D96]/50 font-semibold transition-all flex items-center justify-center gap-2 text-sm sm:text-base order-1 sm:order-2 disabled:opacity-50 disabled:cursor-not-allowed"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
                   >

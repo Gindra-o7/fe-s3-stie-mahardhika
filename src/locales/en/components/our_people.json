@@ -1,6 +1,23 @@
 {
   "people": {
     "title": "OUR PEOPLE",
+    "description": [
+      [{ "text": "The Doctoral Program in Management at STIE Mahardhika Surabaya was built by a visionary and dedicated academic community.", "bold": false }],
+      [
+        { "text": "Our ", "bold": false },
+        { "text": "promoters, experts, and researchers", "bold": true },
+        { "text": " are active in national and international collaborations, bringing global insights and practical relevance to every learning process.", "bold": false }
+      ],
+      [
+        { "text": "Doctoral students come from ", "bold": false },
+        { "text": "diverse professions—academics, executives, and practitioners", "bold": true },
+        { "text": "—who together create a dynamic and inspiring space for scientific dialogue.", "bold": false }
+      ],
+      [
+        { "text": "This is where future leaders meet, exchange ideas, and grow into ", "bold": false },
+        { "text": "agents of change in the modern management world.", "bold": true }
+      ]
+    ],
     "opportunity": {
       "title": "CAREER OPPORTUNITIES",
       "subtitle": "Graduates suitable for:",

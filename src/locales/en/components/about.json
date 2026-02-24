@@ -1,6 +1,23 @@
 {
   "about": {
     "title": "ABOUT STIE MAHARDHIKA",
-    "description": "With over 30 years of experience in education, STIE Mahardhika through its MM Program (Master of Management) has proven to produce professional graduates and management experts capable of becoming planners, developers, and problem solvers in the society 5.0 era. Through this program, participants will be guided to produce various innovations in Management that can be used to improve quality at regional, national, and international levels. Supported by practitioner lecturers with Doctoral and Professor degrees and equipped with various state-of-the-art technological facilities, STIE Mahardhika creates an intensive and conducive academic atmosphere to face competition in the Digital Economy world."
+    "description": "With over 30 years of experience in education, STIE Mahardhika through its MM Program (Master of Management) has proven to produce professional graduates and management experts capable of becoming planners, developers, and problem solvers in the society 5.0 era. Through this program, participants will be guided to produce various innovations in Management that can be used to improve quality at regional, national, and international levels. Supported by practitioner lecturers with Doctoral and Professor degrees and equipped with various state-of-the-art technological facilities, STIE Mahardhika creates an intensive and conducive academic atmosphere to face competition in the Digital Economy world.",
+    "cards": [
+      {
+        "title": "Main Facilities",
+        "subtitle": "7-Story Campus (2+ Ha)",
+        "description": "Modern infrastructure with spacious building areas for study comfort."
+      },
+      {
+        "title": "Smart Technology",
+        "subtitle": "Digital Learning Hub",
+        "description": "Supported by Smart Classes and an integrated Academic Information System."
+      },
+      {
+        "title": "Academic Culture",
+        "subtitle": "GILA Philosophy",
+        "description": "Fast-moving, Innovative, Agile, and Adaptive in producing leaders."
+      }
+    ]
   }
 }

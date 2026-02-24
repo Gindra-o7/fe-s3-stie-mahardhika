@@ -1,0 +1,47 @@
+{
+  "landing_career": {
+    "title": "CAREER OPPORTUNITIES",
+    "items": [
+      {
+        "title": "National Transformation Leader",
+        "description": "leading cross-institutional change through strategy formulation, implementation orchestration, and measurable performance achievement."
+      },
+      {
+        "title": "Impactful Doctoral Researcher",
+        "description": "producing original research that is relevant and solution-oriented for public policy, industry, and development."
+      },
+      {
+        "title": "Driver of Innovation and Research Downstreaming",
+        "description": "converting research findings into valuable and applicable programs, models, or products for organizations and regions."
+      },
+      {
+        "title": "Regional Development and Competitiveness Strategist",
+        "description": "developing roadmaps for investment, growth, and strengthening regional competitiveness based on analysis and evidence."
+      },
+      {
+        "title": "Corporate Strategy and Growth Executive",
+        "description": "formulating measurable and scalable strategies for expansion, positioning, and sustainable growth."
+      },
+      {
+        "title": "Data-Driven Policy Analyst",
+        "description": "conducting risk analysis, modeling impacts, and generating precise, prudent, and accountable policy recommendations."
+      },
+      {
+        "title": "Governance and ESG Architect",
+        "description": "designing and strengthening organizational governance and ESG practices that are transparent, accountable, and resilient to crises."
+      },
+      {
+        "title": "Bureaucratic Reform and Digital Government Leader",
+        "description": "building public service systems that are effective, efficient, and technology-based to improve service quality."
+      },
+      {
+        "title": "International Cooperation Specialist",
+        "description": "managing cross-border initiatives from planning, negotiation, and funding schemes, to professional fulfillment of deliverables."
+      },
+      {
+        "title": "Corporate/SOE Transformation Leader",
+        "description": "leading organizational transformation to be more adaptive, digital, efficient, and globally competitive."
+      }
+    ]
+  }
+}

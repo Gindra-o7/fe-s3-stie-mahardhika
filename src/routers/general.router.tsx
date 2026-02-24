@@ -16,9 +16,11 @@ import HowToApplyPage from "@/pages/publics/how-to-apply.page";
 import InternationalSupportPage from "@/pages/publics/international-support.page";
 import OurPeoplePage from "@/pages/publics/our-people.page";
 import AboutPage from "@/pages/publics/about.page";
+import CareerOpportunityPage from "@/pages/publics/career-opportunity.page";
 import { ROUTE_CONFIG } from "@/constants/route-config";
+import React from "react";
 
-const createLocalizedRoutes = (paths: { id: string; en: string; zh: string }, element: JSX.Element): RouteObject[] => {
+const createLocalizedRoutes = (paths: { id: string; en: string; zh: string }, element: React.ReactNode): RouteObject[] => {
   return Object.values(paths).map((path) => ({
     path,
     element,
@@ -26,10 +28,6 @@ const createLocalizedRoutes = (paths: { id: string; en: string; zh: string }, el
 };
 
 export const generalRouter: RouteObject[] = [
-  {
-    path: "/",
-    element: <LandingPage />,
-  },
   ...createLocalizedRoutes(ROUTE_CONFIG.HOME, <LandingPage />),
   ...createLocalizedRoutes(ROUTE_CONFIG.ACADEMIC, <AcademicPage />),
   ...createLocalizedRoutes(ROUTE_CONFIG.FACILITY, <FacilityPage />),
@@ -44,6 +42,7 @@ export const generalRouter: RouteObject[] = [
   ...createLocalizedRoutes(ROUTE_CONFIG.LOGIN, <LoginPage />),
   ...createLocalizedRoutes(ROUTE_CONFIG.FORGOT_PASSWORD, <ForgotPasswordPage />),
   ...createLocalizedRoutes(ROUTE_CONFIG.RESET_PASSWORD, <ResetPasswordPage />),
+  ...createLocalizedRoutes(ROUTE_CONFIG.CAREER_OPPORTUNITY, <CareerOpportunityPage />),
   {
     path: "/forbidden",
     element: <ForbiddenPage />,

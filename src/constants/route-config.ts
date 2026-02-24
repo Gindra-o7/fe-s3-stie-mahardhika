@@ -15,10 +15,11 @@ export type RouteKey =
   | "PROFILE"
   | "LOGIN"
   | "FORGOT_PASSWORD"
-  | "RESET_PASSWORD";
+  | "RESET_PASSWORD"
+  | "CAREER_OPPORTUNITY";
 
 export const ROUTE_CONFIG: Record<RouteKey, { id: string; en: string; zh: string }> = {
-  HOME: { id: "/beranda", en: "/", zh: "/shouye" },
+  HOME: { id: "/", en: "/", zh: "/" },
   ACADEMIC: { id: "/akademik", en: "/academic", zh: "/xueshu" },
   HOW_TO_APPLY: { id: "/cara-mendaftar", en: "/how-to-apply", zh: "/ruhe-shenqing" },
   FACILITY: { id: "/fasilitas", en: "/facility", zh: "/sheshi" },
@@ -35,6 +36,7 @@ export const ROUTE_CONFIG: Record<RouteKey, { id: string; en: string; zh: string
   LOGIN: { id: "/masuk", en: "/login", zh: "/denglu" },
   FORGOT_PASSWORD: { id: "/lupa-sandi", en: "/forgot-password", zh: "/wangji-mima" },
   RESET_PASSWORD: { id: "/atur-sandi", en: "/reset-password", zh: "/chongzhi-mima" },
+  CAREER_OPPORTUNITY: { id: "/peluang-karir", en: "/career-opportunity", zh: "/zhiye-jihui" },
 };
 
 export const getRoutePath = (key: RouteKey, lang: "id" | "en" | "zh" = "id") => {
@@ -43,4 +45,15 @@ export const getRoutePath = (key: RouteKey, lang: "id" | "en" | "zh" = "id") => 
 
 export const getAllPaths = (key: RouteKey) => {
   return Object.values(ROUTE_CONFIG[key]);
+};
+
+export const getRouteKeyFromPath = (path: string): RouteKey | undefined => {
+  const normalizedPath = path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
+
+  for (const [key, paths] of Object.entries(ROUTE_CONFIG)) {
+    if (Object.values(paths).includes(normalizedPath)) {
+      return key as RouteKey;
+    }
+  }
+  return undefined;
 };

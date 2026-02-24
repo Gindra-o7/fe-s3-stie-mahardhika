@@ -1,6 +1,23 @@
 {
   "people": {
-    "title": "ORANG-ORANG KAMI",
+    "title": "OUR PEOPLE",
+    "description": [
+      [{ "text": "Program Doktor Ilmu Manajemen STIE Mahardhika Surabaya dibangun oleh komunitas akademik yang visioner dan berdedikasi.", "bold": false }],
+      [
+        { "text": "Para ", "bold": false },
+        { "text": "promotor, pakar, dan peneliti", "bold": true },
+        { "text": " kami aktif dalam kolaborasi nasional maupun internasional, menghadirkan wawasan global dan relevansi praktis dalam setiap proses pembelajaran.", "bold": false }
+      ],
+      [
+        { "text": "Mahasiswa doktor berasal dari ", "bold": false },
+        { "text": "beragam profesi—akademisi, eksekutif, dan praktisi", "bold": true },
+        { "text": "—yang bersama menciptakan ruang dialog ilmiah yang dinamis dan inspiratif.", "bold": false }
+      ],
+      [
+        { "text": "Di sinilah para pemimpin masa depan bertemu, bertukar gagasan, dan tumbuh menjadi ", "bold": false },
+        { "text": "agen perubahan dalam dunia manajemen modern.", "bold": true }
+      ]
+    ],
     "opportunity": {
       "title": "PELUANG KARIR",
       "subtitle": "Lulusan yang cocok untuk:",

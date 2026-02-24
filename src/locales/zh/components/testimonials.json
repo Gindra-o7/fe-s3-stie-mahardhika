@@ -1,23 +1,31 @@
 {
   "testimonials": {
-    "title": "感言",
-    "description": "学生和校友对他们在管理科学博士项目中的学习经历的评价。",
+    "title": "校友评价",
+    "description": "",
     "items": [
       {
-        "quote": "该课程提供了与当今商业挑战相关的深刻见解。",
-        "name": "Budi Santoso"
+        "name": "Warsilan",
+        "title1": "Pelindo Marine Service 总裁兼董事",
+        "title2": "管理学硕士 / STIE Mahardhika 管理学硕士",
+        "quote": "\"在这里学习帮助我了解如何更有效地管理组织，特别是在面对行业动态时。我在领导团队和为 Pelindo Marine Service 的发展制定战略决策方面的能力受到了极大的影响。\""
       },
       {
-        "quote": "称职的讲师和支持性设施极大地帮助了论文的完成。",
-        "name": "Siti Aminah"
+        "name": "Naftali Akawal",
+        "title1": "中巴布亚 Puncak 县副县长",
+        "title2": "管理学硕士 / STIE Mahardhika 管理学硕士",
+        "quote": "\"我所修读的管理学硕士课程教会了我成为一名具有可衡量战略和深厚同理心的有远见的领导者。因此，我能够为中巴布亚的治理带来创新。\""
       },
       {
-        "quote": "广泛的网络和鼓舞人心的讨论使在这里的学习非常有价值。",
-        "name": "Rahmat Hidayat"
+        "name": "Alvian Erwansyah",
+        "title1": "PT. Adarma Sagraha Pratama 首席执行官兼创始人",
+        "title2": "STIE Mahardhika 管理学硕士 & MBA - 美国俄勒冈州立大学",
+        "quote": "\"STIE Mahardhika Surabaya 为我创办公司奠定了坚实的基础。现代且基于实践的学习方法与当前的行业需求高度相关。因此，我能够将 PT. Adarma Sagraha Pratama 发展成为一家具有创新性和高度竞争力的公司。\""
       },
       {
-        "quote": "适应性课程确实帮助我发展了我的学术生涯。",
-        "name": "Dewi Lestari"
+        "name": "Tamsil Ainnur Rizal",
+        "title1": "Oleh Oleh Buah Tangan Batu 董事",
+        "title2": "管理学硕士 / STIE Mahardhika 管理学硕士",
+        "quote": "\"借助 STIE Mahardhika 专注于创新和创造力的学习方法，我能够将 Oleh-Oleh Buah Tangan Batu 业务发展得更具竞争力和可持续性。在这里学习真正改变了我对企业管理的看法。\""
       }
     ]
   }

@@ -1,13 +1,10 @@
 {
+  "nav.home": "Beranda",
   "nav.academic": "Akademik",
-  "nav.howtoapply": "Cara Daftar",
-  "nav.facility": "Fasilitas",
-  "nav.concentration": "Konsentrasi",
-  "nav.experience": "Pengalaman Mahasiswa",
-  "nav.research": "Pendanaan dan Dukungan Penelitian",
-  "nav.placement": "Penempatan Kerja",
-  "nav.staff": "Dosen dan Staf",
-  "nav.news": "Berita",
+  "nav.international_support": "Dukungan Internasional",
+  "nav.career_opportunity": "Peluang Karir",
+  "nav.howtoapply": "Cara Mendaftar",
+  "nav.about": "Tentang Kami",
   "button.login": "Masuk",
   "button.register": "Daftar Sekarang",
   "button.logout": "Keluar"

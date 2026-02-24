@@ -1,13 +1,10 @@
 {
+  "nav.home": "首页",
   "nav.academic": "学术",
+  "nav.international_support": "国际支持",
+  "nav.career_opportunity": "职业机会",
   "nav.howtoapply": "如何申请",
-  "nav.facility": "设施",
-  "nav.concentration": "专业方向",
-  "nav.experience": "学生体验",
-  "nav.research": "研究资助与支持",
-  "nav.placement": "就业安置",
-  "nav.staff": "教职员工",
-  "nav.news": "新闻动态",
+  "nav.about": "关于我们",
   "button.login": "登录",
   "button.register": "立即注册",
   "button.logout": "登出"

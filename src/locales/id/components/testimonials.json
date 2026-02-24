@@ -1,23 +1,31 @@
 {
   "testimonials": {
-    "title": "Testimoni",
-    "description": "Apa kata para mahasiswa dan alumni tentang pengalaman belajar mereka di Program Doktor Ilmu Manajemen.",
+    "title": "TESTIMONI LULUSAN",
+    "description": "",
     "items": [
       {
-        "quote": "Program ini memberikan wawasan mendalam dan relevan dengan tantangan bisnis masa kini.",
-        "name": "Budi Santoso"
+        "name": "Warsilan",
+        "title1": "Direktur Utama & Pelindo Marine Service",
+        "title2": "S2 Magister Management / S2 Magister Manajemen STIE Mahardhika",
+        "quote": "\"Kuliah di sini membantu saya memahami cara mengelola organisasi dengan lebih efektif, terutama dalam menghadapi dinamika industri. Saya merasakan dampak luar biasa dalam kemampuan memimpin tim dan mengambil keputusan strategis untuk kemajuan Pelindo Marine Service.\""
       },
       {
-        "quote": "Dosen yang kompeten dan fasilitas yang mendukung sangat membantu dalam penyelesaian disertasi.",
-        "name": "Siti Aminah"
+        "name": "Naftali Akawal",
+        "title1": "Wakil Bupati Puncak Papua Tengah",
+        "title2": "S2 Magister Management / S2 Magister Manajemen STIE Mahardhika",
+        "quote": "\"Program Magister Manajemen yang saya tempuh mengajarkan saya untuk menjadi pemimpin visioner dengan strategi yang terukur dan empati yang mendalam. Dampaknya, saya mampu membawa inovasi dalam tata kelola pemerintahan di Papua Tengah.\""
       },
       {
-        "quote": "Jejaring yang luas dan diskusi yang inspiratif membuat studi di sini sangat berharga.",
-        "name": "Rahmat Hidayat"
+        "name": "Alvian Erwansyah",
+        "title1": "CEO & Founder PT. Adarma Sagraha Pratama",
+        "title2": "S2 Magister Management / S2 Magister Manajemen STIE Mahardhika & MBA - Oregon State University, USA",
+        "quote": "\"STIE Mahardhika Surabaya telah memberikan saya landasan yang kokoh dalam membangun perusahaan. Pendekatan pembelajaran yang modern dan berbasis praktik sangat relevan dengan kebutuhan industri saat ini. Hasilnya, saya mampu mengembangkan PT. Adarma Sagraha Pratama menjadi perusahaan yang inovatif dan berdaya saing tinggi.\""
       },
       {
-        "quote": "Kurikulum yang adaptif sangat membantu saya dalam mengembangkan karir akademis saya.",
-        "name": "Dewi Lestari"
+        "name": "Tamsil Ainnur Rizal",
+        "title1": "Direktur Oleh Oleh Buah Tangan Batu",
+        "title2": "S2 Magister Management / S2 Magister Manajemen STIE Mahardhika",
+        "quote": "\"Dengan pendekatan pembelajaran di STIE Mahardhika yang fokus pada inovasi dan kreativitas, saya mampu mengembangkan bisnis Oleh-Oleh Buah Tangan Batu menjadi lebih kompetitif dan berkelanjutan. Kuliah di sini benar-benar mengubah cara pandang saya tentang manajemen bisnis.\""
       }
     ]
   }

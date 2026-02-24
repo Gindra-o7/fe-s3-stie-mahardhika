@@ -1,6 +1,24 @@
 {
   "people": {
     "title": "我们的人员",
+    "description": [
+      [{ "text": "STIE Mahardhika 泗水管理博士项目由一个富有远见和奉献精神的学术界建立。", "bold": false }],
+      [
+        { "text": "我们的", "bold": false },
+        { "text": "推动者、专家和研究人员", "bold": true },
+        { "text": "积极参与国内和国际合作，将全球视野和实际相关性带入每一个学习过程。", "bold": false }
+      ],
+      [
+        { "text": "博士生来自", "bold": false },
+        { "text": "不同的职业——学者、高管和从业者——", "bold": true },
+        { "text": "大家共同创造了一个充满活力、鼓舞人心的科学对话空间。", "bold": false }
+      ],
+      [
+        { "text": "这里是未来的领导者相遇、交流思想并成长为", "bold": false },
+        { "text": "现代管理世界变革者", "bold": true },
+        { "text": "的地方。", "bold": false }
+      ]
+    ],
     "opportunity": {
       "title": "职业机会",
       "subtitle": "毕业生适合：",

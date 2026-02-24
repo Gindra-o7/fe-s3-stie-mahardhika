@@ -1,6 +1,23 @@
 {
   "about": {
     "title": "TENTANG STIE MAHARDHIKA",
-    "description": "Dengan pengalaman di dunia pendidikan lebih dari 30 tahun, STIE Mahardhika melalui Program MM (Magister Manajemen) telah terbukti menghasilkan lulusan profesional dan pakar dibidang manajemen, yang mampu menjadi perencana, pengembang, dan pemecah masalah di era society 5.0. Melalui Program ini, peserta akan dibimbing untuk menghasilkan berbagai inovasi di bidang Manajemen yang dapat digunakan untuk peningkatan mutu di tingkat daerah, nasional maupun internasional. Di dukung dosen praktisi bergelar Doktor dan Profesor serta dilengkapi dengan berbagai fasilitas berteknologi terkini. STIE Mahardhika menciptakan sebuah suasana akademik yang intensif dan kondusif untuk menghadapi persaingan di dunia Ekonomi Digital."
+    "description": "Dengan pengalaman di dunia pendidikan lebih dari 30 tahun, STIE Mahardhika melalui Program MM (Magister Manajemen) telah terbukti menghasilkan lulusan profesional dan pakar dibidang manajemen, yang mampu menjadi perencana, pengembang, dan pemecah masalah di era society 5.0. Melalui Program ini, peserta akan dibimbing untuk menghasilkan berbagai inovasi di bidang Manajemen yang dapat digunakan untuk peningkatan mutu di tingkat daerah, nasional maupun internasional. Di dukung dosen praktisi bergelar Doktor dan Profesor serta dilengkapi dengan berbagai fasilitas berteknologi terkini. STIE Mahardhika menciptakan sebuah suasana akademik yang intensif dan kondusif untuk menghadapi persaingan di dunia Ekonomi Digital.",
+    "cards": [
+      {
+        "title": "Fasilitas Utama",
+        "subtitle": "Kampus 7 Lantai (2+ Ha)",
+        "description": "Infrastruktur modern dengan area bangunan luas untuk kenyamanan studi."
+      },
+      {
+        "title": "Teknologi Cerdas",
+        "subtitle": "Digital Learning Hub",
+        "description": "Didukung Smart Class dan Sistem Informasi Akademik yang terintegrasi."
+      },
+      {
+        "title": "Budaya Akademik",
+        "subtitle": "Filosofi GILA",
+        "description": "Gerak Cepat, Inovatif, Lincah, dan Adaptif dalam mencetak pemimpin."
+      }
+    ]
   }
 }

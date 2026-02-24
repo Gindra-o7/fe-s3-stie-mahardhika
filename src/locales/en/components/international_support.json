@@ -1,5 +1,10 @@
 {
   "support": {
-    "title": "INTERNATIONAL SUPPORT"
+    "title": "INTERNATIONAL SUPPORT",
+    "subtitle": "Brief description of what MLC is, its role and functions (concise but comprehensively on point)",
+    "description": "Mahardhika Learning Center (MLC) is an official training and workshop center affiliated with STIE Mahardhika Surabaya, offering training, workshops, webinars, as well as online/hybrid classes. MLC is the learning destination of choice, specifically for STIE Mahardhika students and the general public, for skill development",
+    "certified": {
+      "description": "Build global connections with <0>50+ national and international institutions across 11 countries.</0> Get publication opportunities and ISBN-registered book publishing, as well as unlimited access to international professional and academic networks to strengthen your position as a future global leader. STIE Mahardhika's Doctor of Management Science Program opens access to the world of research, cross-cultural collaboration, and prestigious international certifications:"
+    }
   }
 }
