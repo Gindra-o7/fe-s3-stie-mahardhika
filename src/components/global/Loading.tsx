@@ -33,7 +33,7 @@ export const LoadingScreen = () => {
             <motion.img
               src={LogoMahardhika}
               alt="Logo Mahasiswa"
-              className="w-50 h-[200]"
+              className="w-50 h-auto"
               animate={{
                 y: [0, -10, 0],
               }}
