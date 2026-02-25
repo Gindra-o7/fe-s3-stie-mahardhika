@@ -28,6 +28,7 @@ const CareerOpportunityPage = () => {
   if (isLoading) {
     return <LoadingScreen />;
   }
+  
   return (
     <div className="bg-light-grey font-sans">
       <Header />

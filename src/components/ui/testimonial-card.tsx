@@ -1,23 +1,14 @@
-import { motion } from "framer-motion";
-
 interface TestimonialCardProps {
   quote: string;
   avatar: string;
   name: string;
   title1: string;
   title2: string;
-  index?: number;
 }
 
-const TestimonialCard = ({ quote, avatar, name, title1, title2, index = 0 }: TestimonialCardProps) => {
+const TestimonialCard = ({ quote, avatar, name, title1, title2 }: TestimonialCardProps) => {
   return (
-    <motion.div
-      className="bg-white rounded-sm p-8 shadow-sm border border-gray-200 transition-all"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4, delay: index * 0.1 }}
-    >
+    <div className="bg-white rounded-sm p-8 shadow-sm border border-gray-200 transition-all">
       {/* Image Container */}
       <div className="w-full h-48 md:h-80 rounded-sm border-2 border-gray-500 mb-6 overflow-hidden flex items-end justify-center bg-white pt-4">
         <img src={avatar} alt={name} className="w-auto h-full object-contain object-bottom" />
@@ -32,7 +23,7 @@ const TestimonialCard = ({ quote, avatar, name, title1, title2, index = 0 }: Tes
 
       {/* Quote */}
       <p className="text-sm font-medium text-gray-500 leading-relaxed italic text-justify">{quote}</p>
-    </motion.div>
+    </div>
   );
 };
 

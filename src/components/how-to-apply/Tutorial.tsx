@@ -1,20 +1,19 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 
 const Tutorial = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-12 bg-white">
-      <div className="container mx-auto px-4 md:px-20">
-        <motion.div className="flex flex-col space-y-4 text-gray-700 leading-relaxed max-w-5xl mx-auto" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+    <section className="py-12 md:py-16 bg-white">
+      <div className="container mx-auto px-1 md:px-20">
+        <div className="flex flex-col space-y-4 md:space-y-6 text-gray-700 leading-relaxed max-w-5xl mx-auto bg-gray-50/50 p-2 sm:p-4 md:p-10 rounded-2xl border border-gray-100 shadow-sm">
           {[0, 1, 2, 3, 4, 5, 6].map((idx) => (
-            <div key={idx} className="flex gap-4">
-              <span className="w-6 shrink-0 font-medium text-right">{idx + 1}.</span>
-              <p className="flex-1 text-base">{t(`apply.tutorial.items.${idx}`)}</p>
+            <div key={idx} className="flex gap-3 md:gap-5">
+              <span className="w-5 md:w-8 shrink-0 font-bold text-right text-base md:text-lg text-[#08C9EC] pt-0.5">{idx + 1}.</span>
+              <p className="flex-1 text-sm sm:text-base md:text-lg text-gray-700 wrap-break-word">{t(`apply.tutorial.items.${idx}`)}</p>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

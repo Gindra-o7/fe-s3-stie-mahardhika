@@ -1,13 +1,15 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
 import LogoMahardhika from "@/assets/BOLD_MAHARDHIKA.png";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/language-selector";
 import { getRoutePath, RouteKey } from "@/constants/route-config";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const { t, language } = useLanguage();
   const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems: { key: string; route: RouteKey }[] = [
     { key: "nav.home", route: "HOME" },
@@ -19,142 +21,64 @@ const Header = () => {
   ];
 
   return (
-    <motion.header className="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200 shadow-sm" style={{ color: "#207D96" }} initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
-      <div className="container mx-auto px-4 flex items-center h-28 gap-8">
-        <motion.div className="flex items-center gap-3 cursor-pointer shrink-0" onClick={() => navigate("/")}>
-          <motion.img src={LogoMahardhika} alt="Logo Mahardhika" className="h-24 w-auto" />
-        </motion.div>
+    <header className="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200 shadow-sm" style={{ color: "#207D96" }}>
+      <div className="container mx-auto px-4 flex items-center h-16 md:h-28 gap-4 md:gap-8 justify-between md:justify-start">
+        <div className="flex items-center gap-3 cursor-pointer shrink-0" onClick={() => navigate("/")}>
+          <img src={LogoMahardhika} alt="Logo Mahardhika" className="h-10 md:h-24 w-auto" />
+        </div>
 
-        <nav className="hidden md:flex items-center gap-6 flex-1 justify-start">
-          {navItems.map((item, index) => (
-            <motion.a
-              key={item.key}
-              href={getRoutePath(item.route, language)}
-              className="text-gray-900 hover:text-[#08C9EC] transition-colors relative group text-sm font-medium"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6 flex-1 justify-start">
+          {navItems.map((item) => (
+            <a key={item.key} href={getRoutePath(item.route, language)} className="text-gray-900 hover:text-[#08C9EC] transition-colors relative group text-sm font-medium">
               {t(item.key)}
               <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-[#08C9EC] group-hover:w-full transition-all duration-300" />
-            </motion.a>
+            </a>
           ))}
         </nav>
 
-        <LanguageSelector />
-        {/* <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
+          <LanguageSelector />
 
-          {session ? (
-            <>
-              <motion.button
-                onClick={() => {
-                  const user = session.user as any;
-                  const role = user?.role;
-                  if (role === "mahasiswa") {
-                    navigate("/mahasiswa/dashboard");
-                  } else if (role === "pendaftar") {
-                    navigate("/pendaftar/dashboard");
-                  } else {
-                    navigate("/dashboard"); // Fallback
-                  }
-                }}
-                className="hidden md:flex items-center gap-2 border-2 border-[#207D96] text-[#207D96] px-5 py-2 rounded-lg hover:bg-[#207D96] hover:text-white transition-all font-medium group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <LayoutDashboard className="w-4 h-4" />
-                <span>Go to Dashboard</span>
-              </motion.button>
+          <button
+            onClick={() => navigate(getRoutePath("LOGIN", language))}
+            className="hidden lg:flex items-center justify-center border border-[#08C9EC] text-[#08C9EC] px-5 py-2 rounded-full hover:bg-[#08C9EC] hover:text-white transition-all font-semibold text-sm"
+          >
+            {t("button.login")}
+          </button>
 
-              <motion.button
-                onClick={handleLogout}
-                className="hidden md:flex items-center gap-2 border-2 border-red-500 text-red-500 px-5 py-2 rounded-lg hover:bg-red-500 hover:text-white transition-all font-medium group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <LogOut className="w-4 h-4" />
-                <span>Logout</span>
-              </motion.button>
-            </>
-          ) : (
-            <>
-              <motion.button
-                onClick={handleClickLogin}
-                className="hidden md:flex items-center gap-2 border-2 border-[#207D96] text-[#207D96] px-5 py-2 rounded-lg hover:bg-[#207D96] hover:text-white transition-all font-medium group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <LogIn className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                <span>{t('button.login')}</span>
-              </motion.button>
-
-              <motion.button
-                onClick={() => setIsModalOpen(true)}
-                className="hidden md:block bg-gradient-to-r from-[#207D96] to-[#1B3F6E] text-white px-6 py-2.5 rounded-lg hover:shadow-lg transition-all font-semibold relative overflow-hidden group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="relative z-10">{t('button.register')}</span>
-                <motion.div className="absolute inset-0 bg-gradient-to-r from-[#1B3F6E] to-[#207D96]" initial={{ x: "-100%" }} whileHover={{ x: 0 }} transition={{ duration: 0.3 }} />
-              </motion.button>
-            </>
-          )}
-
-          <button className="md:hidden text-[#207D96]" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="lg:hidden text-[#207D96]" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
-        </div> */}
+        </div>
       </div>
 
-      {/* <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div className="md:hidden bg-white border-t" style={{ borderColor: "#207D96" }} initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}>
-            <nav className="flex flex-col p-4 gap-3">
-              {navItems.map((item) => (
-                <a key={item.key} href={item.href} className="text-[#207D96] hover:text-[#1B3F6E] py-2 px-4 hover:bg-gray-50 rounded-md transition-colors">
-                  {t(item.key)}
-                </a>
-              ))}
+      {isMenuOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-lg z-50">
+          <nav className="flex flex-col p-4 gap-3">
+            {navItems.map((item) => (
+              <a
+                key={item.key}
+                href={getRoutePath(item.route, language)}
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-900 hover:text-[#08C9EC] py-2 px-4 hover:bg-gray-50 rounded-md transition-colors font-medium text-sm border-b border-gray-100 last:border-b-0"
+              >
+                {t(item.key)}
+              </a>
+            ))}
 
-
-              {session ? (
-                <>
-                  <button onClick={() => {
-                    const user = session.user as any;
-                    const role = user?.role;
-                    if (role === "mahasiswa") {
-                      navigate("/mahasiswa/dashboard");
-                    } else if (role === "pendaftar") {
-                      navigate("/pendaftar/dashboard");
-                    } else {
-                      navigate("/dashboard");
-                    }
-                  }} className="flex items-center justify-center gap-2 border-2 border-[#207D96] text-[#207D96] px-4 py-2.5 rounded-lg hover:bg-[#207D96] hover:text-white transition-all font-medium mt-2">
-                    <LayoutDashboard className="w-4 h-4" />
-                    <span>Go to Dashboard</span>
-                  </button>
-                  <button onClick={handleLogout} className="flex items-center justify-center gap-2 border-2 border-red-500 text-red-500 px-4 py-2.5 rounded-lg hover:bg-red-500 hover:text-white transition-all font-medium mt-2">
-                    <LogOut className="w-4 h-4" />
-                    <span>Logout</span>
-                  </button>
-                </>
-              ) : (
-                <>
-                  <button onClick={handleClickLogin} className="flex items-center justify-center gap-2 border-2 border-[#207D96] text-[#207D96] px-4 py-2.5 rounded-lg hover:bg-[#207D96] hover:text-white transition-all font-medium mt-2">
-                    <LogIn className="w-4 h-4" />
-                    <span>{t('button.login')}</span>
-                  </button>
-
-                  <button onClick={() => setIsModalOpen(true)} className="bg-gradient-to-r from-[#207D96] to-[#1B3F6E] text-white px-4 py-2.5 rounded-lg hover:shadow-lg transition-all font-semibold">
-                    {t('button.register')}
-                  </button>
-                </>
-              )}
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence> */}
-    </motion.header>
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                navigate(getRoutePath("LOGIN", language));
+              }}
+              className="mt-2 mx-4 bg-[#08C9EC] text-white py-2.5 rounded-full font-semibold hover:bg-[#06a6c3] transition-colors"
+            >
+              {t("button.login")}
+            </button>
+          </nav>
+        </div>
+      )}
+    </header>
   );
 };
 

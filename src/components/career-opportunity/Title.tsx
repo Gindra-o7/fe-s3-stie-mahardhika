@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { TitleText } from "@/components/ui/title-text";
 
@@ -10,25 +9,19 @@ const Title = () => {
 
   const Card = ({ index }: { index: number }) => {
     return (
-      <motion.div
-        className="bg-white border-2 border-gray-800 rounded-lg p-6 md:p-8"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: (index % 5) * 0.1 }}
-      >
-        <h3 className="text-sm md:text-base font-bold text-gray-900 mb-2">{t(`landing_career.items.${index}.title`)}</h3>
-        <p className="text-xs md:text-sm text-gray-600 leading-relaxed">{t(`landing_career.items.${index}.description`)}</p>
-      </motion.div>
+      <div className="bg-white border-2 border-gray-100 hover:border-[#08C9EC] rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 group transform hover:-translate-y-1">
+        <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 group-hover:text-[#08C9EC] transition-colors">{t(`landing_career.items.${index}.title`)}</h3>
+        <p className="text-sm md:text-base text-gray-600 leading-relaxed">{t(`landing_career.items.${index}.description`)}</p>
+      </div>
     );
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-20">
-        <div className="flex justify-end mb-16">
-          <div className="w-full md:w-1/2 flex justify-end">
-            <TitleText className="text-3xl md:text-4xl text-right">{t("landing_career.title")}</TitleText>
+    <section className="py-16 md:py-24 bg-gray-50">
+      <div className="container mx-auto px-6 md:px-20">
+        <div className="flex justify-center md:justify-end mb-12 md:mb-16">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+            <TitleText>{t("landing_career.title")}</TitleText>
           </div>
         </div>
 

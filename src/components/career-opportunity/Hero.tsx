@@ -3,14 +3,16 @@ import pic_1 from "@/assets/components/career-opportunity/hero/pic_1.webp";
 const Hero = () => {
   return (
     <section
-      className="relative h-157.5 w-full flex items-center"
+      className="relative min-h-[50vh] md:min-h-157.5 w-full flex items-center bg-center"
       style={{
         backgroundImage: `url(${pic_1})`,
         backgroundSize: "cover",
-        backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
       }}
-    />
+    >
+      {/* Overlay for better readability on mobile */}
+      <div className="absolute inset-0 bg-white/40 md:hidden"></div>
+    </section>
   );
 };
 

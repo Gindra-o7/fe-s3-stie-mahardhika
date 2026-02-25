@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { TitleText } from "@/components/ui/title-text";
 
@@ -10,73 +9,63 @@ const Information = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-20">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 mb-16">
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-6 md:px-20">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-20 mb-12 md:mb-16">
           {/* Left Column: Text */}
-          <motion.div className="w-full md:w-1/2 text-gray-600 leading-relaxed text-justify" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+          <div className="w-full md:w-1/2 text-gray-600 leading-relaxed text-left md:text-justify">
             <p className="mb-4"></p>
-          </motion.div>
+          </div>
 
           {/* Right Column: Title */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <TitleText className="text-3xl md:text-4xl">{t("apply.information.title")}</TitleText>
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+            <TitleText className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-right leading-tight">{t("apply.information.title")}</TitleText>
           </div>
         </div>
 
         {/* Requirements & Upload Section */}
-        <div className="grid md:grid-cols-2 gap-4 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {/* Persyaratan */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="border-2 border-gray-600 rounded-lg p-8 hover:shadow-md transition-all duration-300">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800 uppercase">{t("apply.information.requirements.title")}</h3>
-            <ul className="space-y-3 text-gray-700">
+          <div className="border-2 border-gray-200 hover:border-[#08C9EC] rounded-2xl p-6 md:p-10 hover:shadow-xl transition-all duration-300 group">
+            <h3 className="text-xl md:text-2xl font-extrabold text-center mb-6 md:mb-8 text-gray-800 uppercase group-hover:text-[#08C9EC] transition-colors">{t("apply.information.requirements.title")}</h3>
+            <ul className="space-y-4 text-gray-700 text-sm md:text-base">
               {[0, 1, 2, 3, 4].map((idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-slate-800 rounded-full shrink-0" />
-                  {t(`apply.information.requirements.items.${idx}`)}
+                <li key={idx} className="flex items-start gap-3 leading-relaxed">
+                  <span className="w-2 h-2 mt-1.5 bg-[#08C9EC] rounded-full shrink-0" />
+                  <span>{t(`apply.information.requirements.items.${idx}`)}</span>
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Unggah Dokumen */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="border-2 border-gray-600 rounded-lg p-8 hover:shadow-md transition-all duration-300"
-          >
-            <h3 className="text-2xl font-bold text-center mb-4 text-gray-800 uppercase">{t("apply.information.upload.title")}</h3>
-            <p className="text-gray-600 mb-6 text-sm">{t("apply.information.upload.subtitle")}</p>
-            <ul className="space-y-3 text-gray-700">
+          <div className="border-2 border-gray-200 hover:border-[#08C9EC] rounded-2xl p-6 md:p-10 hover:shadow-xl transition-all duration-300 group">
+            <h3 className="text-xl md:text-2xl font-extrabold text-center mb-3 md:mb-4 text-gray-800 uppercase group-hover:text-[#08C9EC] transition-colors">{t("apply.information.upload.title")}</h3>
+            <p className="text-gray-500 mb-6 md:mb-8 text-center text-sm md:text-base font-medium">{t("apply.information.upload.subtitle")}</p>
+            <ul className="space-y-4 text-gray-700 text-sm md:text-base">
               {[0, 1, 2, 3, 4].map((idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-slate-800 rounded-full shrink-0" />
-                  {t(`apply.information.upload.items.${idx}`)}
+                <li key={idx} className="flex items-start gap-3 leading-relaxed">
+                  <span className="w-2 h-2 mt-1.5 bg-[#08C9EC] rounded-full shrink-0" />
+                  <span>{t(`apply.information.upload.items.${idx}`)}</span>
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </div>
 
         {/* Registration Scheme */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="border-2 border-gray-600 rounded-lg p-8 md:p-12 hover:shadow-md transition-all duration-300"
-        >
-          <h3 className="text-2xl font-bold text-center mb-16 text-gray-800 uppercase">{t("apply.information.scheme.title")}</h3>
+        <div className="border-2 border-gray-200 hover:border-[#08C9EC] rounded-2xl p-6 md:p-12 hover:shadow-xl transition-all duration-300 bg-gray-50/50">
+          <h3 className="text-2xl md:text-3xl font-extrabold text-center mb-10 md:mb-16 text-gray-900 uppercase">{t("apply.information.scheme.title")}</h3>
 
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 relative">
             {/* Step 1 */}
-            <div className="flex items-start gap-4">
-              <img src={register} alt="" className="w-16 h-16 object-contain shrink-0 mt-1" />
-              <div className="flex flex-col space-y-2">
-                <h4 className="text-lg font-extrabold text-gray-900">{t("apply.information.scheme.steps.1.title")}</h4>
-                <div className="text-base font-bold space-y-1.5 text-gray-700 uppercase">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6 text-center sm:text-left relative z-10">
+              <div className="bg-white p-4 rounded-full shadow-md border border-gray-100 shrink-0">
+                <img src={register} alt="" className="w-12 h-12 md:w-16 md:h-16 object-contain" />
+              </div>
+              <div className="flex flex-col mt-2">
+                <h4 className="text-lg md:text-xl font-extrabold text-gray-900 mb-3">{t("apply.information.scheme.steps.1.title")}</h4>
+                <div className="text-sm md:text-base font-semibold space-y-2 text-gray-600 uppercase">
                   {[0, 1, 2, 3].map((idx) => (
                     <p key={idx}>{t(`apply.information.scheme.steps.1.content.${idx}`)}</p>
                   ))}
@@ -85,11 +74,13 @@ const Information = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="flex items-start gap-4">
-              <img src={files} alt="" className="w-16 h-16 object-contain shrink-0 mt-1" />
-              <div className="flex flex-col space-y-2">
-                <h4 className="text-lg font-extrabold text-gray-900">{t("apply.information.scheme.steps.2.title")}</h4>
-                <div className="text-base font-bold space-y-1.5 text-gray-700 uppercase">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6 text-center sm:text-left relative z-10">
+              <div className="bg-white p-4 rounded-full shadow-md border border-gray-100 shrink-0">
+                <img src={files} alt="" className="w-12 h-12 md:w-16 md:h-16 object-contain" />
+              </div>
+              <div className="flex flex-col mt-2">
+                <h4 className="text-lg md:text-xl font-extrabold text-gray-900 mb-3">{t("apply.information.scheme.steps.2.title")}</h4>
+                <div className="text-sm md:text-base font-semibold space-y-2 text-gray-600 uppercase">
                   {[0, 1, 2, 3].map((idx) => (
                     <p key={idx}>{t(`apply.information.scheme.steps.2.content.${idx}`)}</p>
                   ))}
@@ -98,11 +89,13 @@ const Information = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="flex items-start gap-4">
-              <img src={task} alt="" className="w-16 h-16 object-contain shrink-0 mt-1" />
-              <div className="flex flex-col space-y-2">
-                <h4 className="text-lg font-extrabold text-gray-900">{t("apply.information.scheme.steps.3.title")}</h4>
-                <div className="text-base font-bold space-y-1.5 text-gray-700 uppercase">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6 text-center sm:text-left relative z-10">
+              <div className="bg-white p-4 rounded-full shadow-md border border-gray-100 shrink-0">
+                <img src={task} alt="" className="w-12 h-12 md:w-16 md:h-16 object-contain" />
+              </div>
+              <div className="flex flex-col mt-2">
+                <h4 className="text-lg md:text-xl font-extrabold text-gray-900 mb-3">{t("apply.information.scheme.steps.3.title")}</h4>
+                <div className="text-sm md:text-base font-semibold space-y-2 text-gray-600 uppercase">
                   {[0, 1, 2].map((idx) => (
                     <p key={idx}>{t(`apply.information.scheme.steps.3.content.${idx}`)}</p>
                   ))}
@@ -110,7 +103,7 @@ const Information = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

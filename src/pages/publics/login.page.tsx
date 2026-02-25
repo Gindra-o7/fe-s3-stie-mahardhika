@@ -284,13 +284,6 @@ export default function FuturisticLogin() {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </button>
               </form>
-
-              <p className="mt-8 text-center text-sm text-gray-600">
-                {t("login.no.account")}{" "}
-                <a href="#" className="text-cyan-600 hover:text-cyan-700 font-medium transition-colors">
-                  {t("login.create.account")}
-                </a>
-              </p>
             </div>
           </div>
         </div>
