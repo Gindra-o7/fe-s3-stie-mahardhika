@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-import ProtectedRoute from "./protected.router";
+// import ProtectedRoute from "./protected.router";
 import DashboardAdmin from "@/pages/admin/dashboard.page";
 import ValidationPage from "@/pages/admin/validation.page";
 import SchedulePage from "@/pages/admin/schedule.page";

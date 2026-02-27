@@ -29,7 +29,7 @@ const tahunOptions = Array.from({ length: 5 }, (_, i) => String(currentYear - i)
 const DataCamaba = () => {
   const [semester, setSemester] = useState(semesterOptions[0]);
   const [tahun, setTahun] = useState(String(currentYear));
-  const [showTable, setShowTable] = useState(false);
+  const [showTable] = useState(false);
 
   const [search, setSearch] = useState("");
   const [pageSize, setPageSize] = useState(10);
