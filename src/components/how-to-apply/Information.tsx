@@ -19,7 +19,7 @@ const Information = () => {
 
           {/* Right Column: Title */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-            <TitleText className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-right leading-tight">{t("apply.information.title")}</TitleText>
+            <TitleText >{t("apply.information.title")}</TitleText>
           </div>
         </div>
 

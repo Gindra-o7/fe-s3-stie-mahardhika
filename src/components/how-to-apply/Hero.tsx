@@ -12,14 +12,15 @@ const Hero = () => {
         backgroundImage: `url(${heroImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center 30%",
       }}
     >
       {/* Overlay for better readability on mobile */}
       <div className="absolute inset-0 bg-black/40 md:hidden"></div>
       {/* Content */}
-      <div className="container mx-auto px-6 md:px-20 relative z-10">
-        <div className="max-w-2xl mx-auto md:ml-auto text-center md:text-right">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-md">{t("apply.hero.title")}</h1>
+      <div className="w-full px-6 md:px-20 relative z-10 flex justify-center md:justify-end">
+        <div className="max-w-2xl text-center md:text-right">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 leading-tight drop-shadow-md">{t("apply.hero.title")}</h1>
         </div>
       </div>
     </section>

@@ -8,12 +8,13 @@ import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 import Hero from "@/components/international-support/Hero";
 import Title from "@/components/international-support/Title";
 import Certified from "@/components/international-support/Certified";
+import Sponsor from "@/components/international-support/Sponsor";
 
 import pic_1 from "@/assets/components/international-support/pic_1.webp";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const InternationalSupportPage = () => {
-  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
+  const [isLoading, setIsLoading] = useState(!sessionStorage.getItem("hasVisited"));
 
   useEffect(() => {
     const img = new Image();
@@ -21,7 +22,7 @@ const InternationalSupportPage = () => {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('hasVisited', 'true');
+        sessionStorage.setItem("hasVisited", "true");
       }, 1000);
     };
   }, []);
@@ -39,6 +40,7 @@ const InternationalSupportPage = () => {
           <img src={pic_1} alt="Picture" className="w-full h-auto" />
         </div>
         <Certified />
+        <Sponsor />
         <ScrollToTop />
       </main>
       <Footer />

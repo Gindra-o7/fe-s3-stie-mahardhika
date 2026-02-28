@@ -17,7 +17,7 @@ const certifications = [
 
 const Certified = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-6 md:px-20">
         <div className="mb-10 md:mb-16 max-w-4xl text-gray-600 text-base md:text-lg leading-relaxed text-center mx-auto">
           <p className="[&>strong]:font-bold [&>strong]:text-gray-900">

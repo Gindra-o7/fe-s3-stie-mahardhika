@@ -18,7 +18,7 @@ const Cost = () => {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-6 md:px-20">
         <div className="flex flex-col items-center sm:items-start mb-10 md:mb-12 text-center sm:text-left">
-          <TitleText className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">{t("apply.detailed_cost.title")}</TitleText>
+          <TitleText>{t("apply.detailed_cost.title")}</TitleText>
           <p className="mt-4 md:mt-6 text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-4xl">{t("apply.detailed_cost.description")}</p>
         </div>
 
