@@ -23,8 +23,13 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     localStorage.setItem("language", lang);
   };
 
-  const value = {
-    language: i18n.language as Language,
+  // Ensure we only ever provide a valid Language type to the rest of the app
+  // If i18n.language is undefined, "en-US", or anything else on first render, fallback to "en"
+  const validLanguages: Language[] = ["id", "en", "zh"];
+  const currentLang = i18n.language && validLanguages.includes(i18n.language as Language) ? (i18n.language as Language) : "en";
+
+  const value: LanguageContextType = {
+    language: currentLang,
     setLanguage: handleSetLanguage,
     t: (key: string, options?: Record<string, unknown>) => t(key, options) as string,
   };
