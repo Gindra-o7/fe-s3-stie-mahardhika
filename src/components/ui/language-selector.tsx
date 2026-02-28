@@ -17,7 +17,7 @@ const LanguageSelector: React.FC = () => {
     { code: "zh" as Language, name: t("language.chinese"), flag: chinaFlag },
   ];
 
-  const currentLanguage = languages.find((lang) => lang.code === language);
+  const currentLanguage = languages.find((lang) => lang.code === language) ?? languages.find((lang) => lang.code === "en");
 
   const handleLanguageChange = (langCode: Language) => {
     // Dapatkan rute untuk bahasa yang baru dipilih terlebih dahulu
