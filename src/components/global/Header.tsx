@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LogoMahardhika from "@/assets/BOLD_MAHARDHIKA.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/language-selector";
 import { getRoutePath, RouteKey } from "@/constants/route-config";
@@ -29,10 +29,10 @@ const Header = () => {
 
         <nav className="hidden lg:flex items-center gap-4 xl:gap-6 flex-1 justify-start">
           {navItems.map((item) => (
-            <a key={item.key} href={getRoutePath(item.route, language)} className="text-gray-900 hover:text-[#08C9EC] transition-colors relative group text-sm font-medium">
+            <Link key={item.key} to={getRoutePath(item.route, language)} className="text-gray-900 hover:text-[#08C9EC] transition-colors relative group text-sm font-medium">
               {t(item.key)}
               <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-[#08C9EC] group-hover:w-full transition-all duration-300" />
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -56,14 +56,14 @@ const Header = () => {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-lg z-50">
           <nav className="flex flex-col p-4 gap-3">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.key}
-                href={getRoutePath(item.route, language)}
+                to={getRoutePath(item.route, language)}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-gray-900 hover:text-[#08C9EC] py-2 px-4 hover:bg-gray-50 rounded-md transition-colors font-medium text-sm border-b border-gray-100 last:border-b-0"
               >
                 {t(item.key)}
-              </a>
+              </Link>
             ))}
 
             <button
